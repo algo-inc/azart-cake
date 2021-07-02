@@ -18,6 +18,7 @@
     width: 100%;
     margin-left: 25px;
     margin-right: 25px;
+
     .nav {
       display: flex;
       justify-content: space-around;
@@ -25,11 +26,13 @@
       margin-top: 17px;
     }
   }
-  .nav-and-search a{
+
+  .nav-and-search a {
     text-decoration: none;
     color: #ffffff;
     font-size: 16px;
-    &:hover{
+
+    &:hover {
       color: #f7dc23;
     }
   }
@@ -46,7 +49,7 @@
       height: 50px;
       border-radius: 10px;
       padding: 0 40px;
-      border:none;
+      border: none;
     }
 
     .search-icon {
@@ -67,43 +70,55 @@
       height: 100%;
       border-top-right-radius: 10px;
       border-bottom-right-radius: 10px;
-      border:none;
+      border: none;
       appearance: none;
-     background: #f7dc23;
-      &:hover{
+      background: #f7dc23;
+
+      &:hover {
         background: #e5e8f5;
       }
     }
   }
+
   .favorites {
     display: flex;
     height: 112px;
-    max-width: 318px;
+    flex: 1;
     width: 100%;
     margin: 10px 0;
-  }
-  .favorites a {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-    max-width: 107px;
-    width: 100%;
-    padding: 3px;
-    height: 112px;
-    text-decoration: none;
-    font-size: 14px;
-    white-space: nowrap;
-    &:hover{
-      background: #34363e;
+
+    a {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      max-width: 110px;
+      min-width: 110px;
+      flex-basis: 110px;
+      border-radius: 3px;
+      width: 100%;
+      padding: 3px;
+      height: 112px;
+      text-decoration: none;
+      font-size: 14px;
+      white-space: nowrap;
+      align-items: center;
+      justify-content: center;
+
+      &:hover {
+        background: #34363e;
+      }
+
+      .item-icon {
+        width: 30px;
+        height: 30px;
+        margin-top: auto;
+      }
+
+      .name {
+        margin-bottom: auto;
+        margin-top: 8px;
+        padding: 2px 0;
+      }
     }
   }
-  .name{
-    margin-bottom: 30px;
-    margin-top: 17px;
-    padding: 2px 0;
-  }
-.item-icon{
-  margin: auto;
-}
 }

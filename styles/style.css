@@ -283,7 +283,7 @@ a:hover {
 .header .favorites {
   display: flex;
   height: 112px;
-  max-width: 318px;
+  flex: 1;
   width: 100%;
   margin: 10px 0;
 }
@@ -291,25 +291,31 @@ a:hover {
   display: flex;
   flex-direction: column;
   text-align: center;
-  align-items: center;
-  max-width: 107px;
+  max-width: 110px;
+  min-width: 110px;
+  flex-basis: 110px;
+  border-radius: 3px;
   width: 100%;
   padding: 3px;
   height: 112px;
   text-decoration: none;
   font-size: 14px;
   white-space: nowrap;
+  align-items: center;
+  justify-content: center;
 }
 .header .favorites a:hover {
   background: #34363e;
 }
-.header .name {
-  margin-bottom: 30px;
-  margin-top: 17px;
-  padding: 2px 0;
+.header .favorites a .item-icon {
+  width: 30px;
+  height: 30px;
+  margin-top: auto;
 }
-.header .item-icon {
-  margin: auto;
+.header .favorites a .name {
+  margin-bottom: auto;
+  margin-top: 8px;
+  padding: 2px 0;
 }
 
 .navigation {
