@@ -1,0 +1,49 @@
+.header-contacts {
+  background: #34363e;
+
+  .container {
+    display: flex;
+    align-items: center;
+  }
+
+  .item {
+    text-decoration: none;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    color: var(--color-white);
+
+    .icon {
+      margin-right: 10px;
+    }
+  }
+
+  .first-item {
+    margin-right: auto;
+  }
+
+  .delivery {
+    font-size: 14px;
+  }
+
+  .whats-app {
+    font-size: 12px;
+    color: #d2d5e1;
+    margin: 0 25px 0 17px;
+
+    .whats-app-icon {
+      margin-left: 13px;
+    }
+  }
+
+  @include breakpoint-tablet {
+    .container {
+      flex-flow: row wrap;
+      justify-content: space-between;
+    }
+
+    .item {
+      margin: 0 0 5px;
+    }
+  }
+}

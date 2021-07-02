@@ -1,0 +1,108 @@
+
+.popular {
+  border-bottom: var(--color-silver)  1px solid;
+  .container {
+    .title {
+      font-size: 31px;
+      margin: 45px auto 40px;
+      text-align: center;
+    }
+
+    .products {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      margin-bottom: 50px;
+    }
+
+    .product {
+      position: relative;
+      padding: 0 10px;
+      max-width: 280px;
+      width: 100%;
+      border: #b8bdcf 1px solid;
+      margin-bottom: 20px;
+      .like {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        z-index: 50;
+       &:hover{
+         background-image: url("/img/heard.png");
+         background-repeat: no-repeat;
+       }
+      }
+      h3{
+        margin: 20px auto 40px;
+        text-align: center;
+      }
+      .swiper-container {
+        .swiper-pagination-bullets .swiper-pagination-bullet {
+          display: inline-block;
+          margin: 8px !important;
+          width: 10px;
+          height: 10px;
+          border-radius: 50%;
+          border: 2px solid #ffffff;
+          vertical-align: middle;
+          background: none;
+          opacity: 1.0;
+        }
+
+        .swiper-pagination-bullet-active {
+          width: 15px !important;
+          height: 15px !important;
+          background: var(--color-primary-dark) !important;
+          border: var(--color-primary-dark) 2px solid !important;
+        }
+
+      }
+      .input-group{
+        display: flex;
+        max-width: 200px;
+        width: 100%;
+        margin: 0 auto;
+        input{
+          width: 35px;
+          height: 35px;
+          border: none;
+          border-radius: 10px;
+        }
+        .text{
+          text-align: center;
+        }
+        .price{
+          margin-left: 15px;
+          line-height: 35px;
+        }
+      }
+
+    }
+
+    .btn{
+      max-width: 260px;
+      width: 100%;
+      background: var(--color-primary);
+      border: none;
+      margin: 40px auto 10px;
+      height: 50px;
+      border-radius: 10px;
+      &:before{
+        background: url("/img/shoping.svg");
+        content: "";
+        background-size: cover;
+        height: 22px;
+        width: 22px;
+        margin-right: 5px;
+        display: inline-block;
+        vertical-align: middle;
+
+      }
+      &:hover{
+        background: var(--color-green);
+      }
+    }
+
+
+  }
+}

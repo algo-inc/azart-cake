@@ -1,0 +1,21 @@
+.product-count {
+  display: flex;
+  align-items: center;
+
+  .inc, .dec {
+    width: 35px;
+    height: 35px;
+    border-radius: 8px;
+  }
+
+  .inc, .dec, input {
+    margin: 0;
+  }
+
+  input {
+    appearance: none;
+    border: none;
+    text-align: center;
+    width: 35px;
+  }
+}

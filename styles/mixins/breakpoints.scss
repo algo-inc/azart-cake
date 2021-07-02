@@ -1,0 +1,29 @@
+@mixin breakpoint-max($max-width) {
+  @media (max-width: $max-width) {
+    @content;
+  }
+}
+
+@mixin breakpoint-tablet {
+  @media (max-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin breakpoint-gt-tablet {
+  @media (min-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin breakpoint-mobile {
+  @media (max-width: 764px) {
+    @content;
+  }
+}
+
+@mixin breakpoint-gt-mobile {
+  @media (min-width: 764px) {
+    @content;
+  }
+}

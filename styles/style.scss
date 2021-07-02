@@ -1,0 +1,56 @@
+@import "mixins/breakpoints";
+@import './main/reset';
+@import './main/fonts';
+@import "./main/typography";
+@import "main/container";
+@import "./components/header-contacts";
+@import "components/header";
+@import "components/navigation";
+@import "components/popular-product";
+@import "components/review";
+@import "components/recipes";
+@import "components/master-class";
+@import "components/instagram";
+@import "components/product-count";
+@import "components/footer";
+
+.slider-btn {
+  display: flex;
+  justify-content: center;
+  max-width: 180px;
+  width: 100%;
+  border: none;
+  background: #c6cad8;
+  line-height: 47px;
+  font-size: 18px;
+  border-radius: 5px;
+  margin: 38px auto 0;
+
+  &:hover {
+    background: var(--color-white);
+  }
+}
+
+.date {
+  color: var(--color-silver);
+}
+
+.title {
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+:root {
+  --container-width: 1184px;
+  --color-primary: #f7dc23;
+  --color-primary-dark: #f7dc23;
+  --color-dark: #15161a;
+  --color-white: #fff;
+  --color-green: #00da29;
+  --color-silver: #b8bdcf;
+}
+
+
+
+

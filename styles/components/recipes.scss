@@ -1,0 +1,29 @@
+.recipes{
+  height: 400px;
+.slide{
+  display: flex;
+  max-width: 375px;
+  width: 100%;
+  .recipes-name{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 26px 20px;
+    a{
+      text-decoration: none;
+      font-weight: 700;
+      color: black;
+      &:before{
+        content: "";
+        background-image: url("/img/boock.png");
+        background-size: cover;
+        height: 20px;
+        width: 30px;
+        margin-right: 5px;
+        display: inline-block;
+        vertical-align: middle;
+      }
+    }
+  }
+}
+}

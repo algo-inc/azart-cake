@@ -1,0 +1,13 @@
+* {
+  color: var(--color-dark);
+  font-family: Museo Sans, serif;
+}
+
+a {
+  color: var(--color-primary);
+}
+a:hover {
+  color: var(--color-primary-dark);
+}
+
+/*# sourceMappingURL=typography.css.map */

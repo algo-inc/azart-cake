@@ -1,0 +1,15 @@
+* {
+  color: var(--color-dark);
+  font-family: Museo Sans, serif;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+a {
+  color: var(--color-primary);
+
+  &:hover {
+    color: var(--color-primary-dark);
+  }
+}
+

@@ -1,0 +1,14 @@
+.popular .container {
+  max-width: 280px;
+  width: 100%;
+}
+.popular .container .products {
+  display: flex;
+  justify-content: space-between;
+}
+.popular .container .product {
+  max-width: 280px;
+  width: 100%;
+}
+
+/*# sourceMappingURL=popular-product.css.map */
