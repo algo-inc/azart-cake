@@ -328,15 +328,14 @@ a:hover {
   justify-content: space-between;
   align-items: flex-start;
 }
-
-.main-nav {
+.navigation .main-nav {
   border: 1px solid var(--color-silver);
   max-width: 280px;
   width: 100%;
   position: relative;
   background: #fafafa;
 }
-.main-nav .item {
+.navigation .main-nav .item {
   height: 53px;
   width: 100%;
   display: flex;
@@ -344,7 +343,7 @@ a:hover {
   position: relative;
   padding-left: 80px;
 }
-.main-nav .item.has-sub-items::after {
+.navigation .main-nav .item.has-sub-items::after {
   width: 8px;
   background-repeat: no-repeat;
   background-size: 100% auto;
@@ -358,16 +357,16 @@ a:hover {
   transition: transform 100ms linear;
   background-image: url(/img/arrow.png);
 }
-.main-nav .item.has-sub-items:hover::after {
+.navigation .main-nav .item.has-sub-items:hover::after {
   transform: rotateY(180deg);
 }
-.main-nav .item .image {
+.navigation .main-nav .item .image {
   margin: auto;
   max-height: 33px;
   width: auto;
   max-width: 100%;
 }
-.main-nav .item .image-wrapper {
+.navigation .main-nav .item .image-wrapper {
   position: absolute;
   display: flex;
   left: 0;
@@ -375,13 +374,13 @@ a:hover {
   height: 100%;
   width: 80px;
 }
-.main-nav .item:not(:last-child) {
+.navigation .main-nav .item:not(:last-child) {
   border-bottom: 1px solid var(--color-silver);
 }
-.main-nav .item:not(:hover):not(.hover) > .sub-items {
+.navigation .main-nav .item:not(:hover):not(.hover) > .sub-items {
   display: none;
 }
-.main-nav .item .sub-items {
+.navigation .main-nav .item .sub-items {
   border-radius: 5px;
   position: absolute;
   display: flex;
@@ -392,28 +391,28 @@ a:hover {
   width: 750px;
   background: var(--color-white);
 }
-.main-nav .item .sub-items a {
+.navigation .main-nav .item .sub-items a {
   font-weight: 500;
 }
-.main-nav .item .sub-items .sub-items a {
+.navigation .main-nav .item .sub-items .sub-items a {
   font-weight: 300;
 }
-.main-nav .item .sub-items .sub-items a::after {
+.navigation .main-nav .item .sub-items .sub-items a::after {
   display: none !important;
 }
-.main-nav .item .sub-items:not(.sub-items-2) {
+.navigation .main-nav .item .sub-items:not(.sub-items-2) {
   border: 1px solid var(--color-silver);
 }
-.main-nav .item .item {
+.navigation .main-nav .item .item {
   border: none;
 }
-.main-nav .item .item::after {
+.navigation .main-nav .item .item::after {
   display: none !important;
 }
-.main-nav .item .item.has-sub-items a {
+.navigation .main-nav .item .item.has-sub-items a {
   padding-right: 30px;
 }
-.main-nav .item .item.has-sub-items a::after {
+.navigation .main-nav .item .item.has-sub-items a::after {
   width: 8px;
   background-repeat: no-repeat;
   background-size: 100% auto;
@@ -427,20 +426,20 @@ a:hover {
   transition: transform 100ms linear;
   background-image: url(/img/arrow.png);
 }
-.main-nav .item .item.has-sub-items a:hover::after {
+.navigation .main-nav .item .item.has-sub-items a:hover::after {
   transform: rotateY(180deg);
 }
-.main-nav .item .item .sub-items {
+.navigation .main-nav .item .item .sub-items {
   top: 0;
   display: block;
   width: auto;
   white-space: nowrap;
 }
-.main-nav .item .item .sub-items .item {
+.navigation .main-nav .item .item .sub-items .item {
   padding-left: 10px;
   padding-right: 10px;
 }
-.main-nav .item a {
+.navigation .main-nav .item a {
   width: 100%;
   text-decoration: none;
   color: var(--color-dark);
@@ -461,56 +460,69 @@ a:hover {
   margin-bottom: 50px;
 }
 
-.review {
+.reviews {
   padding: 70px 0;
   background: #e5e8f5;
 }
-.review .title {
+.reviews .title {
   font-size: 34px;
   text-align: center;
   margin-bottom: 40px;
 }
-.review .swiper {
+.reviews .swiper {
   margin-bottom: 30px;
 }
-.review .slide {
-  max-width: 380px;
+.reviews .slide {
+  max-width: 385px;
   height: 380px;
   width: 100%;
-  padding: 25px 30px;
+  padding: 20px 0;
   background: var(--color-white);
 }
-.review .slide h3 {
+.reviews .slide img {
+  padding-left: 30px;
+}
+.reviews .slide h3 {
   font-size: 20px;
   font-weight: 700;
 }
-.review .slide p {
+.reviews .slide p {
   margin: 45px 0 10px 0;
   height: 170px;
+  padding: 0 30px;
 }
-.review .slide .top {
+.reviews .slide .top {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   flex-direction: row;
 }
-.review .slide .user {
+.reviews .slide .user {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  padding: 0 30px;
 }
-.review .slide .user .date {
+.reviews .slide .user .date {
   color: var(--color-silver);
+  font-size: 16px;
+  font-weight: 300;
 }
-.review .rating-mini {
+.reviews .slide .user .name {
+  font-size: 16px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+.reviews .rating-mini {
   display: flex;
   flex-direction: column;
   width: 65%;
 }
-.review .rating-mini .rating {
+.reviews .rating-mini .rating {
   display: flex;
+  margin-left: 10px;
 }
-.review .rating-mini span {
+.reviews .rating-mini span {
   margin-right: 10px;
   margin-top: 20px;
   padding: 0;
@@ -522,7 +534,7 @@ a:hover {
   background-size: 100%;
   background-image: url("/img/review/star-not-active.svg");
 }
-.review .rating-mini span.active {
+.reviews .rating-mini span.active {
   background-image: url("/img/review/star.svg");
 }
 
@@ -532,13 +544,26 @@ a:hover {
 .recipes .slide {
   display: flex;
   max-width: 375px;
+  height: 195px;
   width: 100%;
 }
 .recipes .slide .recipes-name {
+  border: var(--color-silver) 1px solid;
+  border-radius: 0 4px 4px 0;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 26px 20px;
+  padding: 10px 20px;
+}
+.recipes .slide .recipes-name h3 {
+  font-size: 20px;
+  font-weight: 700;
+}
+.recipes .slide .recipes-name .date {
+  margin: 20px 0;
+}
+.recipes .slide .recipes-name p {
+  font-size: 16px;
 }
 .recipes .slide .recipes-name a {
   text-decoration: none;
@@ -554,6 +579,9 @@ a:hover {
   margin-right: 5px;
   display: inline-block;
   vertical-align: middle;
+}
+.recipes .slide .recipes-name a:hover {
+  text-decoration: underline;
 }
 
 .master-class {
@@ -580,7 +608,7 @@ a:hover {
   padding: 30px;
 }
 .master-class .slide .description {
-  padding: 30px 0;
+  padding: 20px 0;
 }
 .master-class .slide .description h3 {
   margin-bottom: 30px;
@@ -807,7 +835,7 @@ a:hover {
   background: none;
   opacity: 1;
 }
-.main-banner .swiper-pagination-bullet-active {
+.main-banner .swiper-pagination-bullets .swiper-pagination-bullet-active {
   width: 15px !important;
   height: 15px !important;
   background: var(--color-primary-dark);
@@ -896,6 +924,7 @@ a:hover {
   margin: 40px auto 10px;
   height: 50px;
   border-radius: 10px;
+  font-weight: 500;
 }
 .btn:before {
   background: url("/img/shoping.svg");

@@ -1,12 +1,12 @@
-.review {
+.reviews {
   background: var(--color-silver);
 }
-.review .container .title {
+.reviews .container .title {
   margin: 70px auto 40px;
   font-size: 34px;
   text-align: center;
 }
-.review .rating-mini span:not(:last-child) {
+.reviews .rating-mini span:not(:last-child) {
   margin-right: 4px;
 }
 

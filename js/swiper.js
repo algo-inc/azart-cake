@@ -7,6 +7,36 @@ new Swiper('.main-banner', {
     initialSlide: 1,
 });
 
+new Swiper('.reviews-slider', {
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev'
+    },
+    slidesPerView: 3,
+    spaceBetween: 20,
+    loop: true
+});
+
+new Swiper('.recipes-slider', {
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev'
+    },
+    slidesPerView: 2,
+    spaceBetween: 20,
+    loop: true
+});
+
+new Swiper('.master-class-slider', {
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev'
+    },
+    slidesPerView: 2,
+    spaceBetween: 20,
+    loop: true
+});
+
 function productImagesSlider() {
     const products = document.getElementsByClassName('product');
     for (let i = 0; i < products.length; i++) {

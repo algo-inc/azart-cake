@@ -74,12 +74,13 @@
       background: none;
       opacity: 1.0;
     }
+
+    .swiper-pagination-bullet-active {
+      width: 15px !important;
+      height: 15px !important;
+      background: var(--color-primary-dark);
+      border: var(--color-primary-dark) 2px solid !important;
+    }
   }
 
-  .swiper-pagination-bullet-active {
-    width: 15px !important;
-    height: 15px !important;
-    background: var(--color-primary-dark);
-    border: var(--color-primary-dark) 2px solid !important;
-  }
 }
