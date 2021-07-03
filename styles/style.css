@@ -460,86 +460,6 @@ a:hover {
   flex-wrap: wrap;
   margin-bottom: 50px;
 }
-.popular .container .product {
-  position: relative;
-  padding: 0 10px;
-  max-width: 280px;
-  width: 100%;
-  border: #b8bdcf 1px solid;
-  margin-bottom: 20px;
-}
-.popular .container .product .like {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  z-index: 50;
-}
-.popular .container .product .like:hover {
-  background-image: url("/img/heard.png");
-  background-repeat: no-repeat;
-}
-.popular .container .product h3 {
-  margin: 20px auto 40px;
-  text-align: center;
-}
-.popular .container .product .swiper-container .swiper-pagination-bullets .swiper-pagination-bullet {
-  display: inline-block;
-  margin: 8px !important;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  border: 2px solid #ffffff;
-  vertical-align: middle;
-  background: none;
-  opacity: 1;
-}
-.popular .container .product .swiper-container .swiper-pagination-bullet-active {
-  width: 15px !important;
-  height: 15px !important;
-  background: var(--color-primary-dark) !important;
-  border: var(--color-primary-dark) 2px solid !important;
-}
-.popular .container .product .input-group {
-  display: flex;
-  max-width: 200px;
-  width: 100%;
-  margin: 0 auto;
-}
-.popular .container .product .input-group input {
-  width: 35px;
-  height: 35px;
-  border: none;
-  border-radius: 10px;
-}
-.popular .container .product .input-group .text {
-  text-align: center;
-}
-.popular .container .product .input-group .price {
-  margin-left: 15px;
-  line-height: 35px;
-}
-.popular .container .btn {
-  max-width: 260px;
-  width: 100%;
-  background: var(--color-primary);
-  border: none;
-  margin: 40px auto 10px;
-  height: 50px;
-  border-radius: 10px;
-}
-.popular .container .btn:before {
-  background: url("/img/shoping.svg");
-  content: "";
-  background-size: cover;
-  height: 22px;
-  width: 22px;
-  margin-right: 5px;
-  display: inline-block;
-  vertical-align: middle;
-}
-.popular .container .btn:hover {
-  background: var(--color-green);
-}
 
 .review {
   padding: 70px 0;
@@ -892,6 +812,103 @@ a:hover {
   height: 15px !important;
   background: var(--color-primary-dark);
   border: var(--color-primary-dark) 2px solid !important;
+}
+
+.product {
+  position: relative;
+  padding: 0 10px;
+  max-width: 280px;
+  width: 100%;
+  border: #b8bdcf 1px solid;
+  margin-bottom: 20px;
+}
+.product .like {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 50;
+}
+.product .like:hover {
+  background-image: url("/img/heard.png");
+  background-repeat: no-repeat;
+}
+.product h3 {
+  margin: auto auto 10px;
+  font-weight: 700;
+  min-height: 53px;
+  text-align: center;
+}
+.product .swiper-container .swiper-pagination-bullets .swiper-pagination-bullet {
+  display: inline-block;
+  margin: 8px !important;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 2px solid #ffffff;
+  vertical-align: middle;
+  background: none;
+  opacity: 1;
+}
+.product .swiper-container .swiper-pagination-bullet-active {
+  width: 15px !important;
+  height: 15px !important;
+  background: var(--color-primary-dark) !important;
+  border: var(--color-primary-dark) 2px solid !important;
+}
+.product .swiper-container .swiper-button-next {
+  background: url("/img/product-arrow.svg") no-repeat;
+}
+.product .swiper-container .swiper-button-next:after {
+  display: none;
+}
+.product .swiper-container .swiper-button-prev {
+  background: url("/img/product-arrow.svg") no-repeat;
+  transform: rotateY(180deg);
+}
+.product .swiper-container .swiper-button-prev:after {
+  display: none;
+}
+.product .input-group {
+  display: flex;
+  max-width: 200px;
+  width: 100%;
+  margin: 0 auto;
+}
+.product .input-group input {
+  width: 35px;
+  height: 35px;
+  border: none;
+  border-radius: 10px;
+}
+.product .input-group .text {
+  text-align: center;
+}
+.product .input-group .price {
+  margin-left: 15px;
+  line-height: 35px;
+}
+
+.btn {
+  max-width: 260px;
+  width: 100%;
+  background: var(--color-primary);
+  border: none;
+  margin: 40px auto 10px;
+  height: 50px;
+  border-radius: 10px;
+}
+.btn:before {
+  background: url("/img/shoping.svg");
+  content: "";
+  background-size: cover;
+  height: 22px;
+  width: 22px;
+  margin-right: 5px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.btn:hover {
+  background: var(--color-green);
 }
 
 .slider-btn {
