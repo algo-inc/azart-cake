@@ -37,6 +37,28 @@ new Swiper('.master-class-slider', {
     loop: true
 });
 
+new Swiper('.product-color-swiper', {
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev'
+    },
+    slidesPerView: 1,
+    spaceBetween: 20,
+    loop: true
+});
+
+new Swiper('.buy-more', {
+    navigation: {
+        nextEl: '.swiper-button-right',
+        prevEl: '.swiper-button-left'
+    },
+    pagination: {
+        el: '.color-product'
+    },
+    slidesPerView: 4,
+    loop: true,
+    spaceBetween: 20,
+});
 function productImagesSlider() {
     const products = document.getElementsByClassName('product');
     for (let i = 0; i < products.length; i++) {
