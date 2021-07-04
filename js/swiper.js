@@ -22,7 +22,7 @@ new Swiper('.recipes-slider', {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev'
     },
-    slidesPerView: 2,
+    slidesPerView: 3,
     spaceBetween: 20,
     loop: true
 });
