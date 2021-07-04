@@ -15,7 +15,9 @@
 @import "components/footer";
 @import "components/main-banner";
 @import "components/product-item";
-
+@import "components/basket";
+@import "components/order-button";
+@import "components/ordering";
 .slider-btn {
   display: flex;
   justify-content: center;
@@ -51,6 +53,7 @@
   --color-white: #fff;
   --color-green: #00da29;
   --color-silver: #b8bdcf;
+  --color-background:#e5e8f5;
 }
 
 

@@ -1,0 +1,254 @@
+.ordering {
+  h2 {
+    text-align: center;
+    font-size: 34px;
+    font-weight: 700;
+  }
+
+  .ordering-title {
+    text-align: center;
+    font-size: 22px;
+  }
+
+  .ordering-container {
+    display: flex;
+
+    .order-and-payment {
+      max-width: 480px;
+      width: 100%;
+
+      .order {
+        .order-content {
+          background: var(--color-background);
+          border: var(--color-silver) 1px solid;
+          display: flex;
+          flex-direction: column;
+          border-radius: 4px;
+          padding: 30px 0;
+          margin-bottom: 40px;
+
+          .product-info {
+            display: flex;
+            max-width: 445px;
+            width: 100%;
+            margin: 0 auto;
+            border-bottom: var(--color-silver) 1px solid;
+
+            .product-name {
+              max-width: 280px;
+              width: 100%;
+            }
+
+            .quantity {
+              max-width: 80px;
+              width: 100%;
+              text-align: center;
+              font-size: 16px;
+            }
+
+            .price {
+              text-align: center;
+              max-width: 80px;
+              width: 100%;
+              font-weight: 500;
+              font-size: 16px;
+            }
+          }
+
+          .order-price {
+            a {
+              text-decoration: none;
+              color: black;
+              line-height: 18px;
+              height: 20px;
+              margin: auto 0;
+
+              &:hover {
+                border-bottom: black 1px solid;
+              }
+
+            }
+
+            .summa {
+              font-weight: 100;
+              color: #979aa9;
+
+              span {
+                font-weight: 700;
+                font-size: 22px;
+                color: black;
+              }
+            }
+
+            max-width: 440px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+            margin: 63px auto 0;
+          }
+        }
+      }
+
+      .payment {
+
+        .payment-content {
+            display: flex;
+            flex-direction: column;
+            padding: 30px 18px 36px;
+          background: var(--color-background);
+          border: var(--color-silver) 1px solid;
+          border-radius: 4px;
+
+            input {
+              position: relative;
+              height: 22px;
+              width: 22px;
+              -webkit-appearance: none;
+              -moz-appearance: none;
+              appearance: none;
+              outline: none;
+
+              &::before {
+                content: '';
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+                transform: translate(-50%, -50%);
+                background-color: white;
+                border: 2px solid var(--color-silver);
+              }
+
+              &:checked:after {
+                content: '';
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                background-color: #34363e;
+                transform: translate(-50%, -50%);
+                visibility: visible;
+              }
+            }
+        }
+        .checkbox{
+          padding: 20px 18px;
+        }
+      }
+    }
+    .contact-and-delivery {
+      max-width: 680px;
+      width: 100%;
+      margin-left: 20px;
+
+      .delivery {
+        .delivery-content {
+          min-height: 239px;
+          padding: 28px;
+          background: var(--color-background);
+          border-radius: 4px;
+          border: var(--color-silver) 1px solid;
+          margin-bottom: 40px;
+        }
+
+        .radiobutton {
+          input {
+            position: relative;
+            height: 22px;
+            width: 22px;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            outline: none;
+
+            &::before {
+              content: '';
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              width: 20px;
+              height: 20px;
+              border-radius: 50%;
+              transform: translate(-50%, -50%);
+              background-color: white;
+              border: 2px solid var(--color-silver);
+            }
+
+            &:checked:after {
+              content: '';
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              width: 10px;
+              height: 10px;
+              border-radius: 50%;
+              background-color: #34363e;
+              transform: translate(-50%, -50%);
+              visibility: visible;
+            }
+          }
+        }
+
+      }
+
+      .contacts {
+      .contacts-content {
+        background: var(--color-background);
+        border: var(--color-silver) 1px solid;
+        border-radius: 4px;
+        display: flex;
+        flex-direction: column;
+        max-width: 667px;
+        width: 100%;
+        padding: 20px;
+        input{
+          margin-bottom: 13px;
+          border-radius: 4px;
+          height: 43px;
+          border: none;
+          &:hover{
+            border: var(--color-silver) 1px solid;
+          }
+
+        }
+        .tel-and-mail{
+          display: flex;
+          justify-content: space-between;
+        .tel{
+          max-width: 315px;
+          width: 100%;
+          margin-right: 10px;
+        }
+          .mail{
+            max-width: 315px;
+            width: 100%;
+            margin-left: 10px;
+          }
+        }
+      }
+    }
+    }
+  }
+  .arrange{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 220px;
+    background: var(--color-primary);
+    border: none;
+    height: 50px;
+    border-radius: 10px;
+    font-weight: 500;
+    margin: 40px auto 60px;
+    cursor: pointer;
+    &:hover{
+      background: var(--color-green);
+    }
+  }
+
+}

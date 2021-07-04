@@ -130,8 +130,15 @@
 <div class="basket">
     <div class="container">
         <h2 class="title">Корзина</h2>
+        <div class="orders">
         <div class="cart-products">
-            <div class="cart-product card-product-header"></div>
+            <div class=" card-product-header">
+                <div>ТОВАР</div>
+                <div class="count-and-price">
+                    <div>КОЛЛ-ВО</div>
+                    <div>ЦЕНА</div>
+                </div>
+            </div>
             <div class="cart-product">
                 <div class="cart-product-content">
                     <img src="/img/cart-product1.png" alt="">
@@ -143,14 +150,125 @@
                         <input value="1" readonly="true" name="product_count">
                         <button class="dec" onclick="decrementCount(this)">-</button>
                     </div>
-                    <div class="product-price" data-price="100">100 р.</div>
+                    <div class="product-price">
+                    <div class="price" data-price="100">100 р.</div>
+                        <a href="">Удалить</a>
+                    </div>
+                </div>
+            </div>
+            <div class="cart-product">
+                <div class="cart-product-content">
+                    <img src="/img/cart-product2.png" alt="">
+                    <h3>Венчик Kamille</h3>
+                </div>
+                <div class="product-count-and-price">
+                    <div class="product-count">
+                        <button onclick="incrementCount(this)" class="inc">+</button>
+                        <input value="1" readonly="true" name="product_count">
+                        <button class="dec" onclick="decrementCount(this)">-</button>
+                    </div>
+                    <div class="product-price">
+                        <div class="price" data-price="100">1500 р.</div>
+                        <a href="">Удалить</a>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="summa"></div>
+        <div class="total-price">
+            <div class="order-price"> СУММА ЗАКАЗА</div>
+            <div class="order-content">
+                <div class="title">2170 р.</div>
+                <div class="order-buttons">
+                <button class="checkout">Перейти к оформлению</button>
+                <button class="one-click">Купить в один клик</button>
+                </div>
+                <p>Доступные способы доставки можно выбрать при оформлении заказа</p>
+            </div>
+        </div>
+        </div>
     </div>
 </div>
-<div class="order"></div>
+<div class="ordering">
+    <div class="container">
+        <h2>Оформление заказа</h2>
+        <div class="ordering-container">
+            <div class="order-and-payment">
+                <div class="order">
+                    <h3 class="ordering-title">ВАШ ЗАКАЗ</h3>
+                    <div class="order-content">
+                        <div class="product-info">
+                            <div class="product-name">Набор для работы с шоколадом №3 Белый</div>
+                            <div class="quantity">1 шт.</div>
+                            <div class="price">670 р.</div>
+                        </div>
+                        <div class="product-info">
+                            <div class="product-name">Венчик Kamille</div>
+                            <div class="quantity">1 шт.</div>
+                            <div class="price">1500 р.</div>
+                        </div>
+                        <div class="order-price">
+                            <div class="summa"> Сумма заказа: <span>2170 р.</span></div>
+                            <a href="">Изменить</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="payment">
+                    <h3 class="ordering-title">СПОСОБ ОПЛАТЫ</h3>
+                    <div class="payment-content">
+                        <p>
+                            <input type="radio" name="radio1" id="answer1" value="yes" checked>
+                            <label for="answer1">Наличными при получении заказа</label>
+                        </p>
+                        <p>
+                            <input type="radio" name="radio2" id="answer2" value="no">
+                            <label for="answer2">Банковской картой</label>
+                        </p>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" class="custom-checkbox" id="cb1">
+                        <label for="cb1">Я согласен (-на) с <span>договором</span>о доставке и с <span>правилами</span>
+                            о обработке персональных данных</label>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-and-delivery">
+                <div class="delivery">
+                    <h3 class="ordering-title">СПОСОБ ДОСТАВКИ</h3>
+                    <div class="delivery-content">
+                        <div class="radiobutton">
+                            <p>
+                                <input type="radio" name="radio3" id="answer3" value="yes" checked>
+                                <label for="answer1">г. Подольск 200руб</label>
+                            </p>
+                            <p>
+                                <input type="radio" name="radio4" id="answer4" value="no">
+                                <label for="answer2">Почтой России 300 руб</label>
+                            </p>
+                            <p>
+                                <input type="radio" name="radio5" id="answer5" value="no">
+                                <label for="answer2">Транспортной компанией СДЭК 300 руб</label>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contacts">
+                    <h3 class="ordering-title">КОНТАКТНЫЕ ДАНЫЕ</h3>
+                    <div class="contacts-content">
+                        <input type="text" placeholder="Ф.И.О">
+                        <input type="text" placeholder="Адрес*">
+                        <div class="tel-and-mail">
+                            <input type="text" class="tel" placeholder="Телефон">
+                            <input type="text" class="mail" placeholder="Электронная почта">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="arrange">Оформить заказ</button>
+    </div>
+</div>
+</div>
+
 <div class="footer">
     <div class="container">
         <div class="footer-container">
