@@ -14,7 +14,21 @@ new Swiper('.reviews-slider', {
     },
     slidesPerView: 3,
     spaceBetween: 20,
-    loop: true
+    loop: true,
+    breakpoints: {
+        1024: {
+            slidesPerView: 3,
+        },
+        768:{
+            slidesPerView: 2,
+            spaceBetween: 20,
+        },
+        100:{
+            slidesPerView: 1,
+            spaceBetween:5,
+        }
+
+    }
 });
 
 new Swiper('.recipes-slider', {
@@ -24,7 +38,21 @@ new Swiper('.recipes-slider', {
     },
     slidesPerView: 3,
     spaceBetween: 20,
-    loop: true
+    loop: true,
+    breakpoints: {
+        1024: {
+            slidesPerView: 3,
+        },
+        768:{
+            slidesPerView: 2,
+            spaceBetween: 10,
+        },
+        100:{
+            slidesPerView: 1,
+            spaceBetween:5,
+        }
+
+    }
 });
 
 new Swiper('.master-class-slider', {
@@ -34,46 +62,19 @@ new Swiper('.master-class-slider', {
     },
     slidesPerView: 2,
     spaceBetween: 20,
-    loop: true
-});
-
-new Swiper('.product-color-swiper', {
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev'
-    },
-    slidesPerView: 1,
-    spaceBetween: 20,
-    loop: true
-});
-
-new Swiper('.buy-more', {
-    navigation: {
-        nextEl: '.swiper-button-right',
-        prevEl: '.swiper-button-left'
-    },
-    pagination: {
-        el: '.color-product'
-    },
-    slidesPerView: 4,
     loop: true,
-    spaceBetween: 20,
-});
-function productImagesSlider() {
-    const products = document.getElementsByClassName('product');
-    for (let i = 0; i < products.length; i++) {
-        const product = products.item(i);
-        new Swiper(product.getElementsByClassName('product-images-slider')[0], {
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev'
-            },
-            pagination: {
-                el: '.swiper-pagination'
-            },
+    breakpoints: {
+
+        768:{
+            slidesPerView: 2,
+            spaceBetween: 10,
+        },
+        100:{
             slidesPerView: 1,
-            loop: true,
-            initialSlide: 1,
-        });
+            spaceBetween:5,
+        }
+
     }
-}
+});
+
+

@@ -1,0 +1,25 @@
+.to-up {
+  position: fixed;
+  bottom: 70px;
+  right: 70px;
+  display: none;
+  z-index: 22;
+  cursor: pointer;
+  border-radius: 50%;
+  width: 67px;
+  height: 67px;
+  border: 1px solid #6c6e78;
+  svg{
+  margin: 25px auto 0;
+    display: flex;
+  }
+  &:hover{
+    fill: var(--color-primary);
+    background: #f7dc23;
+  }
+  @include breakpoint-mobile{
+    right: 45.5%;
+  }
+}
+
+

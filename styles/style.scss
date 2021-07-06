@@ -19,6 +19,10 @@
 @import "components/order-button";
 @import "components/ordering";
 @import "components/about-product";
+@import "components/catalog";
+@import "components/list-nav";
+@import "components/up-btn";
+
 .slider-btn {
   display: flex;
   justify-content: center;
@@ -54,7 +58,7 @@
   --color-white: #fff;
   --color-green: #00da29;
   --color-silver: #b8bdcf;
-  --color-background:#e5e8f5;
+  --color-background: #e5e8f5;
 }
 
 

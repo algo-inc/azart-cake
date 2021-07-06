@@ -2,6 +2,9 @@
   background: #e5e8f5;
   height: 100%;
   padding: 70px 0;
+  @include breakpoint-mobile{
+    padding: 30px 0;
+  }
 
 
 
@@ -21,8 +24,21 @@
       height: 260px;
       max-width: 580px;
       width: 100%;
+      @include breakpoint-mobile {
+        height: 340px;
+      }
       img {
         padding: 30px;
+        @include breakpoint-tablet{
+          width: 120px;
+          height: 120px;
+          margin: auto 20px;
+          padding: 5px;
+        }
+        @include breakpoint-mobile{
+          padding: 10px;
+          height: auto ;
+        }
       }
       .description{
         padding: 20px 0;
@@ -30,9 +46,18 @@
           margin-bottom: 30px;
           font-size: 22px;
           font-weight: 700;
+          @media (max-width: 1120px) {
+            margin-bottom: 10px;
+          }
+          @include breakpoint-tablet {
+            margin-bottom: 5px;
+          }
         }
         p{
           margin-bottom: 30px;
+          @media (max-width: 1120px) {
+            margin-bottom: 10px;
+          }
         }
 
       }

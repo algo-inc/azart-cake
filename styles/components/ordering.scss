@@ -1,8 +1,12 @@
 .ordering {
+
   h2 {
     text-align: center;
     font-size: 34px;
     font-weight: 700;
+    @media (max-width: 768px) {
+      text-align: left;
+    }
   }
 
   .ordering-title {
@@ -12,7 +16,10 @@
 
   .ordering-container {
     display: flex;
-
+    @media (max-width: 768px){
+      flex-direction: column;
+      align-items: center;
+    }
     .order-and-payment {
       max-width: 480px;
       width: 100%;

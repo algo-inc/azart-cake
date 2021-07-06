@@ -1,0 +1,48 @@
+.navigation .container .filter {
+  max-width: 880px;
+  width: 100%;
+}
+.navigation .container .filter .filter-head {
+  display: flex;
+  justify-content: space-between;
+  background: var(--color-background);
+  padding: 0 20px;
+  line-height: 45px;
+}
+.navigation .container .filter .filter-head .filters:before {
+  content: "";
+  background: url("/img/filters-icon.png");
+  background-size: cover;
+  height: 16px;
+  width: 14px;
+  margin-right: 5px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.navigation .container .filter .filter-head .reset-filters:before {
+  content: "";
+  background: url("/img/close-icon.png");
+  background-size: cover;
+  height: 11px;
+  width: 11px;
+  margin-right: 5px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.navigation .container .filter .filter-head .reset-filters:hover {
+  text-decoration: underline 1px solid;
+}
+.navigation .container .filter .filter-body {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+.navigation .container .filter .filter-body .sorting-filter {
+  display: flex;
+}
+.navigation .container .filter .filter-body .sorting-filter select {
+  border: none;
+  height: 20px;
+}
+
+/*# sourceMappingURL=catalog.css.map */

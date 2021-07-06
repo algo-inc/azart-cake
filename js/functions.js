@@ -1,3 +1,22 @@
+function productImagesSlider() {
+    const products = document.getElementsByClassName('product');
+    for (let i = 0; i < products.length; i++) {
+        const product = products.item(i);
+        new Swiper(product.getElementsByClassName('product-images-slider')[0], {
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev'
+            },
+            pagination: {
+                el: '.swiper-pagination'
+            },
+            slidesPerView: 1,
+            loop: true,
+            initialSlide: 1,
+        });
+    }
+}
+
 function incrementCount(button) {
     const parent = button.parentElement;
     const superParent = parent.parentElement;
@@ -18,4 +37,12 @@ function decrementCount(button) {
     const count = parseInt(input.value) <= 1 ? 1 : parseInt(input.value) - 1;
     input.value = count;
     price.innerHTML = count * oneProductPrice + ' р.';
+}
+
+function dropDownNav() {
+    $('.list-nav > .item.has-sub-items').click(function (e) {
+        if (e.target.tagName !== 'A') {
+            $(this).toggleClass('active');
+        }
+    });
 }

@@ -1,4 +1,8 @@
-
+.new-products {
+  @include breakpoint-mobile{
+    display: none;
+  }
+}
 .popular {
   border-bottom: var(--color-silver)  1px solid;
   .container {
@@ -6,13 +10,26 @@
       font-size: 31px;
       margin: 45px auto 40px;
       text-align: center;
+      @include breakpoint-mobile{
+        margin: 25px auto 20px;
+      }
     }
-
     .products {
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
       margin-bottom: 50px;
+      @media (max-width: 908px) {
+       margin:  0 85px;
+      }
+      @media (max-width: 768px){
+        margin: 0px 65px 0px;
+
+      }
+      @media(max-width: 729px ){
+        display: flex;
+        justify-content: center;
+      }
     }
 
   }

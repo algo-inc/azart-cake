@@ -12,6 +12,15 @@
   .slide{
     img {
       padding-left: 30px;
+      @media (max-width: 1152px){
+        padding-left: 20px;
+      }
+    }
+    @include breakpoint-tablet{
+      max-width: 474px;
+    }
+    @include  breakpoint-mobile{
+      max-width: 760px;
     }
   h3{
     font-size: 20px;
@@ -27,12 +36,16 @@
       margin: 45px 0 10px 0;
       height: 170px;
       padding: 0 30px;
+      @include  breakpoint-mobile {
+        margin: 10px 0 10px 0;
+      }
     }
    .top{
      display: flex;
      justify-content: space-between;
      flex-wrap: wrap;
      flex-direction: row;
+
    }
     .user{
       display: flex;

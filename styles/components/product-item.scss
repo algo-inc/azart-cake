@@ -5,7 +5,13 @@
   width: 100%;
   border: #b8bdcf 1px solid;
   margin-bottom: 20px;
+  @include breakpoint-tablet{
+    margin: 5px;
+  }
 
+    a {
+      text-decoration: none;
+    }
   .like {
     position: absolute;
     top: 20px;
