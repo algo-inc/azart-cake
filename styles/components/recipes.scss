@@ -3,6 +3,11 @@
   @include breakpoint-mobile{
     height: 330px;
   }
+  .title{
+    font-size: 34px;
+    font-weight: 700;
+    margin-top: 70px;
+  }
 .slide{
   display: flex;
   max-width: 375px;

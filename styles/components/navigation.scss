@@ -11,13 +11,6 @@
       display: flex;
       flex-direction: column-reverse;
     }
-    .main-nav{
-      .item{
-        &:hover{
-          background: var(--color-primary);
-        }
-      }
-    }
   }
 
   .main-nav {
@@ -26,8 +19,10 @@
     width: 100%;
     position: relative;
     background: #fafafa;
+    & > :hover{
+      background: var(--color-primary);
+    }
 
-    
     &.drop-out-nav {
       .item {
         height: 53px;

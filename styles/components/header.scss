@@ -44,6 +44,12 @@
   .logo {
     margin-top: 6px;
     margin-bottom: 14px;
+    max-width: 240px;
+    width: 100%;
+    svg{
+      height:auto;
+      width: 100%;
+    }
   }
 
   .nav-and-search {

@@ -5,12 +5,12 @@ $(document).ready(function () {
     var slider = document.getElementById('prices-slider');
 
     noUiSlider.create(slider, {
-        start: [20, 80],
+        start: [1, 800],
         connect: true,
         tooltips: true,
         range: {
             'min': 0,
-            'max': 100
+            'max': 1000
         }
     });
 });

@@ -67,7 +67,7 @@ new Swiper('.master-class-slider', {
 
         768:{
             slidesPerView: 2,
-            spaceBetween: 10,
+            spaceBetween: 20,
         },
         100:{
             slidesPerView: 1,

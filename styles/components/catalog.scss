@@ -74,6 +74,10 @@
           .prices-slider{
             width: 100%;
             max-width: 200px;
+            .noUi-target{
+              background: var(--color-silver);
+              border: 1px solid var(--color-background);
+            }
             .noUi-handle {
               background: #f7dc23;
               width: 20px;
