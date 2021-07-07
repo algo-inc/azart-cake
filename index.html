@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="./styles/style.css">
     <title>Document</title>
-    <script src="/js/functions.js"></script>
     <script src="/js/jquery-3.6.0.min.js"></script>
+    <script src="/js/functions.js"></script>
     <script src="/js/up-btn.js"></script>
 </head>
 <body>
@@ -85,6 +85,11 @@
             <a href="/">
                 <img src="/img/logo.png" alt="">
             </a>
+            <button class="burger"
+                    onclick="$(this).toggleClass('active');$('.nav-and-search').toggleClass('active'); $('.favorites').toggleClass('active')">
+                <img class="burger-icon" src="/img/icons/menu.svg">
+                <img class="close-icon" src="/img/icons/close.svg">
+            </button>
         </div>
         <div class="nav-and-search">
             <form class="search" action="">
@@ -131,14 +136,11 @@
                 <span class="name">Корзина</span>
             </a>
         </div>
-        <div class="header-burger" onclick="$(this).toggleClass('active');$('.nav-and-search').toggleClass('active');">
-            <span></span>
-        </div>
     </div>
 </header>
-<div class="navigation">
-    <div class="container">
-        <nav class="main-nav drop-out-nav">
+<div class="container">
+    <div class="navigation">
+        <nav id="main-nav" class="main-nav drop-out-nav">
             <div class="item has-sub-items">
                 <a href="">
                     <div class="image-wrapper">
@@ -1278,8 +1280,8 @@
                     </div>
                 </div>
             </div>
-            <div class="swiper-button-prev"><img  class="prev" src="/img/arrow-left.png" alt=""></div>
-            <div class="swiper-button-next"><img  class="next" src="/img/arrow-right.png" alt=""></div>
+            <div class="swiper-button-prev"><img class="prev" src="/img/arrow-left.png" alt=""></div>
+            <div class="swiper-button-next"><img class="next" src="/img/arrow-right.png" alt=""></div>
         </div>
         <button class="slider-btn">Оставить отзыв</button>
     </div>

@@ -39,10 +39,28 @@ function decrementCount(button) {
     price.innerHTML = count * oneProductPrice + ' р.';
 }
 
-function dropDownNav() {
-    $('.list-nav > .item.has-sub-items').click(function (e) {
-        if (e.target.tagName !== 'A') {
-            $(this).toggleClass('active');
-        }
-    });
+
+function changeDropOutNavToListNavInMobileDevices() {
+    var nav = $('#main-nav');
+    var width = $(window).width();
+    nav.removeClass('list-nav');
+    nav.removeClass('drop-out-nav');
+    if (width <= 1024) {
+        nav.addClass('list-nav')
+    } else {
+        nav.addClass('drop-out-nav');
+    }
 }
+
+$(document).on('click', '.list-nav > .item.has-sub-items', function (e) {
+    if (e.target.tagName !== 'A') {
+        $(this).toggleClass('active');
+    }
+});
+
+$(document).ready(function () {
+    changeDropOutNavToListNavInMobileDevices();
+    $(window).resize(function () {
+        changeDropOutNavToListNavInMobileDevices();
+    });
+});
