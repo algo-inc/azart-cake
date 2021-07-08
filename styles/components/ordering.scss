@@ -4,6 +4,7 @@
     text-align: center;
     font-size: 34px;
     font-weight: 700;
+    margin: 70px 0;
   }
 
   .ordering-title {
@@ -150,6 +151,9 @@
       max-width: 680px;
       width: 100%;
       margin-left: 20px;
+      @include breakpoint-mobile{
+        margin: 0 auto;
+      }
 
       .delivery {
         .delivery-content {

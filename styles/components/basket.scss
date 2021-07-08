@@ -3,8 +3,20 @@
   background: var(--color-background);
 
   .container {
+    h2{
+      font-weight: 500;
+    }
+
+    .breadcrumb{
+      background: var(--color-background);
+    }
     .orders {
       display: flex;
+      @include breakpoint-mobile{
+        flex-direction: column;
+
+      }
+
       .cart-products {
         min-height: 140px;
         max-width: 780px;
@@ -19,6 +31,7 @@
           display: flex;
           background: var(--color-background) !important;
           justify-content: space-between;
+
           .count-and-price {
             max-width: 243px;
             width: 100%;
@@ -32,6 +45,7 @@
           &:hover {
             border-radius: var(--color-silver) 1px solid;
           }
+
           min-height: 140px;
           border-radius: 4px;
           background: var(--color-white);
@@ -54,6 +68,7 @@
             }
           }
         }
+
         .cart-product-content {
           display: flex;
           text-align: center;
@@ -68,6 +83,7 @@
             margin: auto;
           }
         }
+
         .product-count-and-price {
           padding-top: 25px;
           display: flex;
@@ -96,9 +112,7 @@
       }
 
 
-
-
-      .total-price{
+      .total-price {
         max-width: 380px;
         width: 100%;
         border-radius: 4px;
@@ -107,38 +121,43 @@
         flex-direction: column;
 
 
-
-        .order-price{
+        .order-price {
           font-size: 22px;
         }
-        .order-content{
+
+        .order-content {
           text-align: center;
           background: var(--color-white);
           border-radius: 4px;
-          max-width:380px;
+          max-width: 380px;
           width: 100%;
           height: 300px;
           display: flex;
           flex-direction: column;
           justify-content: space-between;
-          .title{
+
+          .title {
             margin: 30px 0;
             font-size: 25px;
+            font-weight: 700;
           }
-          p{
+
+          p {
             max-width: 340px;
             width: 100%;
             font-size: 16px;
             font-weight: 100;
             margin: 25px auto;
           }
-          .order-buttons{
-            .checkout{
-              &:hover{
+
+          .order-buttons {
+            .checkout {
+              &:hover {
                 background: var(--color-green);
               }
             }
-            .one-click{
+
+            .one-click {
               margin-top: 5px;
               max-width: 340px;
               width: 100%;
@@ -147,20 +166,23 @@
               background: var(--color-white);
               margin-bottom: 12px;
               border: var(--color-silver) 1px solid;
-              &:hover{
+
+              &:hover {
                 background: var(--color-background);
               }
             }
           }
         }
-        .order-price{
+
+        .order-price {
           text-align: center;
 
         }
       }
 
     }
-    .to-up{
+
+    .to-up {
 
     }
   }

@@ -54,7 +54,13 @@
         background: var(--color-primary);
         &:before{
           content: "";
-          background: url("/img/instagram/user.svg");
+          background: url("/img/instagram-btn.svg");
+          background-size: cover;
+          height: 22px;
+          width: 22px;
+          margin-right: 5px;
+          display: inline-block;
+          vertical-align: middle;
         }
         &:hover {
           background:

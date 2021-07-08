@@ -397,10 +397,22 @@ a:hover {
   padding: 2px 0;
 }
 
+.breadcrumb-container {
+  display: flex;
+  margin-top: 50px;
+}
+.breadcrumb-container h2 {
+  margin: 0 auto;
+  font-weight: 500;
+  font-size: 31px;
+  text-transform: uppercase;
+}
+
 .navigation {
   background: #e5e8f5;
-  padding-top: 38px;
+  padding-top: 10px;
   padding-bottom: 60px;
+  display: flex;
 }
 .navigation .container {
   display: flex;
@@ -587,6 +599,11 @@ a:hover {
 }
 .reviews .swiper {
   margin-bottom: 30px;
+}
+.reviews .swiper .next {
+  position: absolute;
+  top: 30px;
+  left: 30px;
 }
 .reviews .slide {
   max-width: 385px;
@@ -775,13 +792,13 @@ a:hover {
   background: var(--color-white);
   height: 260px;
   max-width: 580px;
-  width: calc(100% - 6px);
+  width: calc(100% - 10px);
   margin: 3px;
   border: 1px solid transparent;
 }
 .master-class .slide:hover {
   border-color: #848897;
-  box-shadow: 0 0 3px #848897;
+  box-shadow: 0 0 10px #848897;
 }
 @media (max-width: 768px) {
   .master-class .slide {
@@ -901,7 +918,13 @@ a:hover {
 }
 .instagram .container .lable button:before {
   content: "";
-  background: url("/img/instagram/user.svg");
+  background: url("/img/instagram-btn.svg");
+  background-size: cover;
+  height: 22px;
+  width: 22px;
+  margin-right: 5px;
+  display: inline-block;
+  vertical-align: middle;
 }
 .instagram .container .lable button:hover {
   background: linear-gradient(25deg, #ffcb52 31%, red 60%, #cc3da8 77%);
@@ -1214,8 +1237,19 @@ a:hover {
   min-height: 534px;
   background: var(--color-background);
 }
+.basket .container h2 {
+  font-weight: 500;
+}
+.basket .container .breadcrumb {
+  background: var(--color-background);
+}
 .basket .container .orders {
   display: flex;
+}
+@media (max-width: 768px) {
+  .basket .container .orders {
+    flex-direction: column;
+  }
 }
 .basket .container .orders .cart-products {
   min-height: 140px;
@@ -1321,6 +1355,7 @@ a:hover {
 .basket .container .orders .total-price .order-content .title {
   margin: 30px 0;
   font-size: 25px;
+  font-weight: 700;
 }
 .basket .container .orders .total-price .order-content p {
   max-width: 340px;
@@ -1384,6 +1419,7 @@ a:hover {
   text-align: center;
   font-size: 34px;
   font-weight: 700;
+  margin: 70px 0;
 }
 .ordering .ordering-title {
   text-align: center;
@@ -1510,6 +1546,11 @@ a:hover {
   max-width: 680px;
   width: 100%;
   margin-left: 20px;
+}
+@media (max-width: 768px) {
+  .ordering .ordering-container .contact-and-delivery {
+    margin: 0 auto;
+  }
 }
 .ordering .ordering-container .contact-and-delivery .delivery .delivery-content {
   min-height: 239px;
@@ -1672,7 +1713,7 @@ a:hover {
 }
 .navigation .container .product-slider-container .product-info .like {
   display: flex;
-  margin: 28px 0;
+  margin: 20px 0 10px;
 }
 .navigation .container .product-slider-container .product-info .like a {
   text-decoration: none;
@@ -1794,6 +1835,9 @@ a:hover {
   position: absolute;
 }
 
+.navigation {
+  background: white;
+}
 .navigation .container .filter {
   margin-left: 20px;
   max-width: 880px;
@@ -1852,6 +1896,7 @@ a:hover {
   font-weight: 500;
 }
 .navigation .container .filter .filter-body .price-filter {
+  cursor: pointer;
   display: flex;
   max-width: 400px;
   width: 100%;
@@ -1968,6 +2013,9 @@ a:hover {
 .main-nav.list-nav > .item.active::after {
   display: none !important;
 }
+.main-nav.list-nav > .item.active:hover {
+  background: white;
+}
 .main-nav.list-nav > .item.active::before {
   width: 100%;
   height: 1px;
@@ -2071,6 +2119,44 @@ a:hover {
   .to-up {
     right: 45.5%;
   }
+}
+
+/* Стиль списка */
+ul.breadcrumb {
+  padding: 10px 16px;
+  list-style: none;
+  display: flex;
+}
+
+/* Отображение элементов списка бок о бок */
+ul.breadcrumb li {
+  display: inline;
+  font-size: 18px;
+}
+
+/* Добавить символ косой черты (/) перед/за каждым элементом списка */
+ul.breadcrumb li + li:before {
+  color: black;
+  content: "";
+  background: url("/img/breadcrumb.png") no-repeat;
+  margin-top: 11px;
+  margin-left: 10px;
+  height: 22px;
+  width: 22px;
+  margin-right: 5px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* Добавить цвет для всех ссылок внутри списка */
+ul.breadcrumb li a {
+  color: #4a4c52;
+  text-decoration: none;
+}
+
+/* Добавить цвет на наведении курсора мыши */
+ul.breadcrumb li a:hover {
+  text-decoration: underline;
 }
 
 .slider-btn {

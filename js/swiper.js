@@ -9,8 +9,8 @@ new Swiper('.main-banner', {
 
 new Swiper('.reviews-slider', {
     navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev'
+        nextEl: '.next',
+        prevEl: '.prev'
     },
     slidesPerView: 3,
     spaceBetween: 20,

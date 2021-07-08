@@ -9,6 +9,12 @@
   }
   .swiper{
     margin-bottom: 30px;
+    .next{
+      position: absolute;
+      top: 30px;
+      left: 30px;
+    }
+
   }
   .slide{
     img {
