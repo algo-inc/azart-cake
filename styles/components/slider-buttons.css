@@ -1,0 +1,19 @@
+.slider-next, .slider-prev {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  width: 15px;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.slider-next {
+  right: -30px;
+}
+
+.slider-prev {
+  left: -30px;
+}
+
+/*# sourceMappingURL=slider-buttons.css.map */

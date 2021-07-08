@@ -1,70 +1,82 @@
-.reviews{
-  padding:  70px 0;
+.reviews {
+  padding: 70px 0;
   background: #e5e8f5;
+  position: relative;
+
   .title {
     font-size: 34px;
     text-align: center;
     margin-bottom: 40px;
     font-weight: 700;
   }
-  .swiper{
+
+  .swiper {
     margin-bottom: 30px;
-    .next{
+
+    .next {
       position: absolute;
       top: 30px;
       left: 30px;
     }
 
   }
-  .slide{
+
+  .slide {
     img {
       padding-left: 30px;
-      @media (max-width: 1152px){
+      @media (max-width: 1152px) {
         padding-left: 20px;
       }
     }
-    @include breakpoint-tablet{
+
+    @include breakpoint-tablet {
       max-width: 474px;
     }
-    @include  breakpoint-mobile{
+    @include breakpoint-mobile {
       max-width: 760px;
     }
-  h3{
-    font-size: 20px;
-    font-weight: 700;
-  }
+
+    h3 {
+      font-size: 20px;
+      font-weight: 700;
+    }
 
     max-width: 385px;
     height: 380px;
     width: 100%;
     padding: 20px 0;
     background: var(--color-white);
-    p{
+
+    p {
       margin: 45px 0 10px 0;
       height: 170px;
       padding: 0 30px;
-      @include  breakpoint-mobile {
+      @include breakpoint-mobile {
         margin: 10px 0 10px 0;
       }
     }
-   .top{
-     display: flex;
-     justify-content: space-between;
-     flex-wrap: wrap;
-     flex-direction: row;
 
-   }
-    .user{
+    .top {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      flex-direction: row;
+
+    }
+
+    .user {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
       padding: 0 30px;
-      .date{
+
+      .date {
         color: var(--color-silver);
         font-size: 16px;
         font-weight: 300;
       }
-      .name{
+
+      .name {
         font-size: 16px;
         font-weight: 700;
         white-space: nowrap;
@@ -100,6 +112,4 @@
       background-image: url('/img/review/star.svg')
     }
   }
-
-
 }

@@ -9,8 +9,8 @@ new Swiper('.main-banner', {
 
 new Swiper('.reviews-slider', {
     navigation: {
-        nextEl: '.next',
-        prevEl: '.prev'
+        nextEl: '#reviews-next',
+        prevEl: '#reviews-prev'
     },
     slidesPerView: 3,
     spaceBetween: 20,
@@ -19,13 +19,13 @@ new Swiper('.reviews-slider', {
         1024: {
             slidesPerView: 3,
         },
-        768:{
+        768: {
             slidesPerView: 2,
             spaceBetween: 20,
         },
-        100:{
+        100: {
             slidesPerView: 1,
-            spaceBetween:5,
+            spaceBetween: 5,
         }
 
     }
@@ -33,8 +33,8 @@ new Swiper('.reviews-slider', {
 
 new Swiper('.recipes-slider', {
     navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev'
+        nextEl: '#rec-next',
+        prevEl: '#rec-prev'
     },
     slidesPerView: 3,
     spaceBetween: 20,
@@ -43,13 +43,13 @@ new Swiper('.recipes-slider', {
         1024: {
             slidesPerView: 3,
         },
-        768:{
+        768: {
             slidesPerView: 2,
             spaceBetween: 10,
         },
-        100:{
+        100: {
             slidesPerView: 1,
-            spaceBetween:5,
+            spaceBetween: 5,
         }
 
     }
@@ -57,21 +57,21 @@ new Swiper('.recipes-slider', {
 
 new Swiper('.master-class-slider', {
     navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev'
+        nextEl: '#master-class-next',
+        prevEl: '#master-class-prev'
     },
     slidesPerView: 2,
     spaceBetween: 20,
     loop: true,
     breakpoints: {
 
-        768:{
+        768: {
             slidesPerView: 2,
             spaceBetween: 20,
         },
-        100:{
+        100: {
             slidesPerView: 1,
-            spaceBetween:5,
+            spaceBetween: 5,
         }
 
     }
