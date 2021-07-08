@@ -1,660 +1,391 @@
-<!doctype html>
-<html lang="en" xmlns="http://www.w3.org/1999/html">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
-    <link rel="stylesheet" href="./styles/style.css">
-    <title>Document</title>
-    <script src="/js/jquery-3.6.0.min.js"></script>
-    <script src="/js/functions.js"></script>
-    <?php
-    require_once __DIR__ . '/functions.php';
-    ?>
-</head>
-<body>
-<div class="header-contacts">
+<?php require_once __DIR__ . '/functions.php'; ?>
+<?php template('header'); ?>
     <div class="container">
-        <a href="" class="item first-item">
-            <svg class="icon" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
-                 xmlns:xlink="http://www.w3.org/1999/xlink" width="20"
-                 height="20" x="0px" y="0px"
-                 viewBox="-84 207.9 426 426" enable-background="new -84 207.9 426 426" xml:space="preserve">
-<g>
-    <path fill="#FFFFFF" d="M129.3,643.9c-4.7,0-9.1-2.2-11.9-6c-0.3-0.4-33.4-45.1-65.7-102.7c-44.1-78.8-66.5-144-66.5-194
-		c0-79,64.3-143.4,143.4-143.4h0.6c79.1,0,143.4,64.3,143.4,143.4c0,41.5-22.2,104.2-66,186.2c-31.7,59.3-63.7,107.8-65,109.8
-		c-2.7,4-7.1,6.5-11.9,6.6C129.6,643.9,129.5,643.9,129.3,643.9z M129.3,623.9v10V623.9C129.3,623.9,129.3,623.9,129.3,623.9
-		L129.3,623.9z M128.7,217.9c-68,0-123.4,55.3-123.4,123.4c0,46.5,21.5,108.4,64,184.2c24.9,44.4,50,80.6,59.9,94.4
-		c9.7-15,34.9-54.9,59.9-101.9c42.2-79.1,63.7-138.6,63.7-176.8c0-68-55.4-123.4-123.4-123.4H128.7z M129,416.4
-		c-39.6,0-71.9-32.2-71.9-71.9s32.2-71.9,71.9-71.9c39.6,0,71.9,32.2,71.9,71.9S168.6,416.4,129,416.4z M129,292.7
-		c-28.6,0-51.9,23.3-51.9,51.9s23.3,51.9,51.9,51.9c28.6,0,51.9-23.3,51.9-51.9S157.6,292.7,129,292.7z"/>
-</g>
-</svg>
-
-            Подольск, улица Клемента Готвальда д. 9 </a>
-        <a href="" class="item">
-            <svg class="icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20"
-                 height="20" viewBox="0 0 20 20">
-                <image id="Векторний_смарт-об_єкт" data-name="Векторний смарт-об’єкт" width="20" height="20"
-                       xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAABfklEQVQ4jaWUvy9DURiG3yNsnaiIRCORkpDUQIJFhKFjF00MTMRiUxajwSqN+AMYzVKxicRkMBhqkSoN/4TEI19yGidXf7jXme5973ee+/1W8wCDwBHwAdwCvUpweoAMcCrpQdKnpGlJdUn7SYDmWQPYBVKBNgC8AeNJgO9t9DUfuovD65H0DExEPzjnLiR9SVqJC7yXtNTCw4KkUUnVOEC7uABUItoMUAOysWD+svOXM4G2CRzHhgWAElAO3seAatyChMAUUDdQoF0Bxf94uQ5cN70CcsALMJQUaLm8tPADzXL52AoKDAPLHdMC9APWl/kI1DwtBt5nfSFvfPP/6uMQOgm8AvOBlvM5fbLqe1hBPxNl9gdtF4rBvFE+olv1t4DZiG6zfwbcdfJ0yodf+kv7AGnbCx0NLaeSziX1SdpxztU62B76Ue76Z6v+hu/TMjDSwsb62NZguiswcsnCt4JUgO1mdYE94MSeY4+Wz6d1wKqkOUm2QGzTLzrnGt+8NIzM5ZsDHQAAAABJRU5ErkJggg=="/>
-            </svg>
-            +7(916)100-60-45
-        </a>
-        <a href="" class="whats-app item">Пишите в WhatsApp
-            <svg class="whats-app-icon" enable-background="new 0 0 24 24" height="25" viewBox="0 0 24 24" width="25"
-                 xmlns="http://www.w3.org/2000/svg">
-                <path d="m20.52 3.449c-2.28-2.204-5.28-3.449-8.475-3.449-9.17 0-14.928 9.935-10.349 17.838l-1.696 6.162 6.335-1.652c2.76 1.491 5.021 1.359 5.716 1.447 10.633 0 15.926-12.864 8.454-20.307z"
-                      fill="#eceff1"/>
-                <path d="m12.067 21.751-.006-.001h-.016c-3.182 0-5.215-1.507-5.415-1.594l-3.75.975 1.005-3.645-.239-.375c-.99-1.576-1.516-3.391-1.516-5.26 0-8.793 10.745-13.19 16.963-6.975 6.203 6.15 1.848 16.875-7.026 16.875z"
-                      fill="#4caf50"/>
-                <path d="m17.507 14.307-.009.075c-.301-.15-1.767-.867-2.04-.966-.613-.227-.44-.036-1.617 1.312-.175.195-.349.21-.646.075-.3-.15-1.263-.465-2.403-1.485-.888-.795-1.484-1.77-1.66-2.07-.293-.506.32-.578.878-1.634.1-.21.049-.375-.025-.524-.075-.15-.672-1.62-.922-2.206-.24-.584-.487-.51-.672-.51-.576-.05-.997-.042-1.368.344-1.614 1.774-1.207 3.604.174 5.55 2.714 3.552 4.16 4.206 6.804 5.114.714.227 1.365.195 1.88.121.574-.091 1.767-.721 2.016-1.426.255-.705.255-1.29.18-1.425-.074-.135-.27-.21-.57-.345z"
-                      fill="#fafafa"/>
-            </svg>
-        </a>
-        <div class="item delivery">
-            <svg class="icon" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
-                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="35"
-                 height="30"
-                 viewBox="0 0 595.3 841.9" enable-background="new 0 0 595.3 841.9" xml:space="preserve">
-<path fill="#FFFFFF" d="M382.7,551.3H155l-2-4.4c-10.5-23.2-34.3-38.7-59.1-38.7c-24.8,0-48.6,15.6-59.1,38.7l-2,4.4H11.4
-	c-10,0-17.9-8.1-17.9-18.4v-84.7h389.2V551.3z M164.5,536.3h203.2v-73.1H8.5V533c0,0.6,0.1,3.4,2.9,3.4h11.9
-	c13.9-26.4,41.1-43.1,70.6-43.1C123.4,493.2,150.6,510,164.5,536.3z"/>
-                <path fill="#FFFFFF" d="M93.9,634.2L93.9,634.2c-31.1,0-56.4-25.3-56.4-56.3c0-31.1,25.3-56.4,56.4-56.4s56.4,25.3,56.4,56.4
-	C150.2,608.9,124.9,634.2,93.9,634.2z M93.9,536.5c-22.8,0-41.4,18.5-41.4,41.4c0,22.8,18.5,41.3,41.3,41.3
-	c22.8,0,41.3-18.6,41.4-41.4C135.2,555,116.7,536.5,93.9,536.5z"/>
-                <path fill="#FFFFFF" d="M589.9,551.3h-32.4l-2-4.4c-10.5-23.2-34.3-38.7-59.1-38.7c-24.8,0-48.6,15.6-59.1,38.7l-2,4.4h-40.5V391.9
-	H549l48.2,21.2c6.7,3.2,10.8,10,10.6,17.4V533C607.8,543.3,599.9,551.3,589.9,551.3z M567,536.3h22.9c2.7,0,2.9-2.8,2.9-3.4l0-102.9
-	c0-1.4-0.7-2.8-2-3.5l-44.9-19.7h-136v129.5h16c13.9-26.4,41.1-43.1,70.6-43.1C525.9,493.2,553.1,510,567,536.3z"/>
-                <path fill="#FFFFFF" d="M543.1,374.7H394.8v-93h74.7c15.4-0.2,29.5,8.2,36.7,21.9L543.1,374.7z M409.8,359.7h108.6l-25.6-49.2
-	c-4.4-8.5-13.2-13.8-22.8-13.8l-0.5,0h-59.8V359.7z"/>
-                <path fill="#FFFFFF" d="M382.7,434.1H-6.5v-186c0-22.8,18.2-41.4,40.5-41.4h308c11,0.1,21.2,4.4,28.9,12.2
-	c7.7,7.8,11.8,18.1,11.8,29.1l-7.5,0.1l7.5,0V434.1z M8.5,419.1h359.2l0-171.2c0.1-7-2.6-13.5-7.5-18.5c-4.9-4.9-11.4-7.7-18.3-7.7
-	l-308,0c-14.3,0-25.5,11.6-25.5,26.4V419.1z"/>
-                <path fill="#FFFFFF" d="M496.4,634.2L496.4,634.2c-31.1,0-56.4-25.3-56.4-56.3c0-31.1,25.3-56.4,56.3-56.4
-	c31.1,0,56.4,25.3,56.4,56.3C552.7,608.9,527.5,634.2,496.4,634.2z M496.4,536.5c-22.8,0-41.3,18.6-41.3,41.4
-	c0,22.8,18.6,41.3,41.3,41.3l0,7.5l0-7.5c22.8,0,41.3-18.6,41.3-41.4C537.8,555,519.2,536.5,496.4,536.5z"/>
-</svg>
-            <div>Бесплатная доставка при заказе <a class="delivery-link">от 3000</a> рублей!</div>
-        </div>
+        <ul class="breadcrumb">
+            <li><a href="index.php">Главная</a></li>
+            <li><a href="catalog.html">Каталог</a></li>
+            <li><a href="">Красители</a></li>
+            <li><a href="">Гелевый краситель YERO Красный</a></li>
+        </ul>
     </div>
-</div>
-<header class="header">
-    <div class="container">
-        <div class="logo">
-            <a href="/">
-                <img src="./img/Logo.png" alt="logo">
-            </a>
-        </div>
-        <div class="nav-and-search">
-            <form class="search" action="">
-                <input placeholder="Поиск" type="search">
-                <img src="/img/search.svg" class="search-icon">
-                <button class="button" type="submit">Найти</button>
-            </form>
-            <nav class="nav">
-                <a class="item" href="catalog.html">Каталог</a>
-                <a class="item" href="">Оплата и доставка</a>
-                <a class="item" href="">О нас</a>
-                <a class="item" href="">Производители</a>
-                <a class="item" href="">Контакты</a>
+    <div class="navigation">
+        <div class="container">
+            <nav class="main-nav drop-out-nav">
+                <div class="item has-sub-items">
+                    <a href="">
+                        <div class="image-wrapper">
+                            <img class="image" src="/img/icons/navigation-icon/krasitely.png" alt="">
+                        </div>
+                        Красители</a>
+                    <div class="sub-items">
+                        <div>
+                            <div class="item">
+                                <a href="">
+                                    <div class="image-wrapper">
+                                        <img class="image" src="/img/icons/sub-icons/pishhevoj-krasitel.png" alt="">
+                                    </div>
+                                    Пищевые красители</a>
+                            </div>
+                            <div class="item">
+                                <a href="">
+                                    <div class="image-wrapper">
+                                        <img class="image" src="/img/icons/sub-icons/krasiteli-zhirorastvorimye.png"
+                                             alt="">
+                                    </div>
+                                    Жирорастворимые красители</a>
+                            </div>
+                            <div class="item has-sub-items">
+                                <a href="">
+                                    <div class="image-wrapper">
+                                        <img class="image" src="/img/icons/sub-icons/gliterr.png" alt="">
+                                    </div>
+                                    Глиттер, блестки, кандурин</a>
+                            </div>
+                            <div class="item">
+                                <a href="">
+                                    <div class="image-wrapper">
+                                        <img class="image" src="/img/icons/sub-icons/top-product.png" alt="">
+                                    </div>
+                                    Топ продукт</a>
+                            </div>
+                            <div class="item">
+                                <a href="">
+                                    <div class="image-wrapper">
+                                        <img class="image" src="/img/icons/sub-icons/chokolate.png" alt="">
+                                    </div>
+                                    Красители для шоколада</a>
+                            </div>
+                            <div class="item has-sub-items">
+                                <a href="">
+                                    <div class="image-wrapper">
+                                        <img class="image" src="/img/icons/sub-icons/pishhevoj-krasitel.png" alt="">
+                                    </div>
+                                    Жидкие для рисования</a>
+                            </div>
+                            <div class="item">
+                                <a href="">
+                                    <div class="image-wrapper">
+                                        <img class="image" src="/img/icons/sub-icons/flomaster.png" alt="">
+                                    </div>
+                                    Фломастеры пищевые</a>
+                            </div>
+                            <div class="item">
+                                <a href="">
+                                    <div class="image-wrapper">
+                                        <img class="image" src="/img/icons/sub-icons/stars.png" alt="">
+                                    </div>
+                                    Блестящие красивые</a>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="item">
+                                <a href="">
+                                    <div class="image-wrapper">
+                                        <img class="image" src="/img/icons/sub-icons/kreda.png" alt="">
+                                    </div>
+                                    Kreda</a>
+                            </div>
+                            <div class="item has-sub-items">
+                                <a href="">
+                                    <div class="image-wrapper">
+                                        <img class="image" src="/img/icons/sub-icons/suxie.png" alt="">
+                                    </div>
+                                    Сухие красители</a>
+                                <div class="sub-items sub-items-2">
+                                    <div class="item">
+                                        <a href="">
+                                            Сухие красители для крема
+                                        </a>
+                                    </div>
+                                    <div class="item">
+                                        <a href="">
+                                            Сухие красители для мастики
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item has-sub-items">
+                                <a href="">
+                                    <div class="image-wrapper">
+                                        <img class="image" src="/img/icons/sub-icons/sprey.png" alt="">
+                                    </div>
+                                    Спреи и велюр</a>
+                            </div>
+                            <div class="item ">
+                                <a href="">
+                                    <div class="image-wrapper">
+                                        <img class="image" src="/img/icons/sub-icons/krasiteli-americolor.png" alt="">
+                                    </div>
+                                    Набор красителей</a>
+                                <div class="sub-items sub-items-2">
+                                    <div class="item">
+                                        <a href="">
+                                            Сухие красители для крема
+                                        </a>
+                                    </div>
+                                    <div class="item">
+                                        <a href="">
+                                            Сухие красители для мастики
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <a href="">
+                                    <div class="image-wrapper">
+                                        <img class="image" src="/img/icons/sub-icons/krasiteli-gelevyye.png" alt="">
+                                    </div>
+                                    Americolor</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item has-sub-items">
+                    <a href="">
+                        <div class="image-wrapper"><img src="/img/icons/navigation-icon/ukrashenia.png" class="image"
+                                                        alt=""></div>
+                        Декор</a>
+                </div>
+                <div class="item has-sub-items">
+                    <a href="">
+                        <div class="image-wrapper"><img src="/img/icons/navigation-icon/ingredienty.png" alt=""
+                                                        class="image"></div>
+                        Ингредиенты</a></div>
+                <div class="item">
+                    <a href="">
+                        <div class="image-wrapper"><img class="image" src="/img/icons/navigation-icon/print.png" alt="">
+                        </div>
+                        Печать</a>
+                </div>
+                <div class="item has-sub-items">
+                    <a href="">
+                        <div class="image-wrapper"><img class="image" src="/img/icons/navigation-icon/tools.png" alt="">
+                        </div>
+                        Инструменты</a>
+                </div>
+                <div class="item has-sub-items">
+                    <a href="">
+                        <div class="image-wrapper"><img class="image" src="/img/icons/navigation-icon/chocolate.png"
+                                                        alt="">
+                        </div>
+                        Шоколад</a>
+                </div>
+                <div class="item">
+                    <a href="">
+                        <div class="image-wrapper"><img class="image" src="/img/icons/navigation-icon/nozzles.png"
+                                                        alt="">
+                        </div>
+                        Насадки
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="">
+                        <div class="image-wrapper"><img class="image" src="/img/icons/navigation-icon/packaging.png"
+                                                        alt="">
+                        </div>
+                        Упаковка</a>
+                </div>
+                <div class="item">
+                    <a href="">
+                        <div class="image-wrapper"><img class="image" src="/img/icons/navigation-icon/mastic.png"
+                                                        alt="">
+                        </div>
+                        Шоколад</a>
+                </div>
+                <div class="item has-sub-items">
+                    <a href="">
+                        <div class="image-wrapper"><img class="image" src="/img/icons/navigation-icon/vipechka.png"
+                                                        alt="">
+                        </div>
+                        Для Выпечки
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="">
+                        <div class="image-wrapper"><img src="/img/icons/navigation-icon/caps.png" class="image" alt="">
+                        </div>
+                        Капсулы</a>
+                </div>
             </nav>
-        </div>
-        <div class="favorites">
-            <a class="item" href="/">
-                <svg class="item-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                     width="35"
-                     height="35" viewBox="0 0 21 28">
-                    <image id="Векторний_смарт-об_єкт" data-name="Векторний смарт-об’єкт" width="21" height="28"
-                           xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAeCAYAAAAo5+5WAAAByElEQVRIibXWwUsWQRjH8a+rIBO+CkoKQtHaIHgUNE+l8CLRe1Yw8BL4L4T4F4h07uxF6NKpOqVC1qlU1JMQAxN40kTQsPWgKA/OK/q6s+7wus9p2fnNZ2YW9tltIKMSE/cD08BzoMsld4EfwJzSdsM32wsnJh4DPgBNnsgp8Fpp+zE3nJi4BOwAbVknAg6BR0rbf7UDkWfCRA4Ul5lIG/DBL3KgmVkf3BMAp2Z9cEsAnJr1wc0BcGrWB+8HwH9D4M0AeCsE/hwAfwqBv+bctWQWc8NK23NgSl7CDFTGplw2944FXwcqrunUltyruExqZXY3LvtGOzAJPHO3fgELStuDrHm34MTEjcAIMOywd0rb5ZpMGXjrFlkBviltz1LhxMStwAzw5lrvrdYq8NNdDwGDKY9mHphV2h5dwYmJnwBLwNO7Hs0dZYBRpe2fhsTEkdvNQJ1otdbkVIKW7xHFWWWBX90jWq2XAvcXAA8K/LgAuFvgjgLghwKXCoBLUVa/qKMiQU8KgE8EHgdu/XDUUWKNR0rbL0Af8B44rgOUuWL0iXmjuyUmVu4HRLqbLNYLdAIPpEVXY8B/YA/4DWxLdwO+K20vPwzABYX5Z3yKBTjcAAAAAElFTkSuQmCC"/>
-                </svg>
-                <span class="name">Личный кабинет</span>
-            </a>
-            <a class="item" href="#">
-                <svg class="item-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                     width="35"
-                     height="35" viewBox="0 0 32 28">
-                    <image id="Векторний_смарт-об_єкт_копія_21" data-name="Векторний смарт-об’єкт копія 21"
-                           width="32" height="28"
-                           xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAeCAYAAACmPacqAAACMklEQVRYhc2XTUgVURTHf2/I4BIRFQhBtZjuooW4CoWQaBMET4T2gqFQ+7SNQZFQm77WhUpB+4Q+LNqUZqtWuWkx3YUGoVjwlBjoizh5Rmt6H/dNvjfvvxm4c875/+7M/SxQRnEU7gOGgJNAJ7AT+AYsADPApLHuVblc1vN7gEHgGHAQaAPWgLfAU2DCWPcxnVdIFdkOXALOa4FqkqJnjXULf+SL8W3tRDVJx64Bl411X/+BiaNwF/AIkF75ahkoGuvexFF4BHgMtPunM6f5pQ2YOAq3Ac+B43UUSvQZGADuAXsy5L8AThjrvgfaMJIRBAV4mBEE9RV/CnEU7gYWgR0Zi22FvgAH5Mv05wyC+vcLTDFnkERFgeloDRY6gjqnYiPVHngsbs1Sm8CUWgSmJDDzLQAimheY6RYAEU3LorcfcDmPHdk4w8BY9wEYzxFENC4cyd50EVjKCWRJ/fkNY6xb0Z33Z5NBxG9A/Um+jAA9S3bPJmpEffkLRoFuAWNNghlTvw1VOgNfAUYbCHLVWHch3VgWRoHOATcaADJsrLtZ7kVFGAWSs87kFq1BspYMGuvuVwqoCsPmtWMK2PsfIJ+AU8a62WpBNWEU6JDeHA5nAHkH9Brr3tcKDGoFsD7LpFA38KROEInv9gHxhlGgVaAPuO6ZInF9muclr9+UVhyFp4E7FQa2DNQzxrq79dbNBCOKo/Ao8CB1bJUbpgzU11lqev+mtNSwC3gJ/NBnV1YQgF8LVJOHcI/90QAAAABJRU5ErkJggg=="/>
-                </svg>
-                <span class="name">Избранное</span>
+            <div class="product-slider-container">
+                <div class="slider">
+                    <div class="swiper-container product-slider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="/img/product-photo.png" alt=""></div>
+                            <div class="swiper-slide"><img src="/img/product-photo.png" alt=""></div>
+                            <div class="swiper-slide"><img src="/img/product-photo.png" alt=""></div>
+                            <div class="swiper-slide"><img src="/img/product-photo.png" alt=""></div>
+                            <div class="swiper-slide"><img src="/img/product-photo.png" alt=""></div>
+                        </div>
+                        <div class="swiper-button-prev prev"><img class="prev" src="/img/arrow-left.png" alt=""></div>
+                        <div class="swiper-button-next next"><img class="next" src="/img/arrow-right.png" alt=""></div>
+                    </div>
+                    <div class="swiper-container product-slider-pagination">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="/img/color-product1.png" alt=""></div>
+                            <div class="swiper-slide"><img src="/img/color-product2.png" alt=""></div>
+                            <div class="swiper-slide"><img src="/img/color-product3.png" alt=""></div>
+                            <div class="swiper-slide"><img src="/img/color-product4.png" alt=""></div>
+                            <div class="swiper-slide"><img src="/img/color-product5.png" alt=""></div>
+                        </div>
+                    </div>
+                </div>
 
-            </a>
-            <a class="item" href="basket.html">
-                <svg class="item-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                     width="35"
-                     height="37" viewBox="0 0 35 37">
-                    <image id="Векторний_смарт-об_єкт" data-name="Векторний смарт-об’єкт" width="35" height="37"
-                           xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAlCAYAAADIgFBEAAACtklEQVRYhd2YTYhOURjHfzOGOiWkRsrHODlKWSiUiDexMiUrWdnbk4UypbCwsFAiKxtpfBPKQqExJt+s0OVEDBPJGJwxPkaPOS+v6733nsvcS/6b+9577j3P732e+zznObfBRfohoPmhd8ARYIMytocSJTD7gVk1JqcBY4EHwDxl7OsygX6Si7RykW53kR50kd5aqmcSgJqBbuAZ0KKMHSwDprHeRWXsC+AcMAWYUwZIIozXYX9cVRZM3TCJXKQn+DC9AVYDV4FquPqVsf2lwXggCdXSgHk++ZJQ1WegL3ZPPCv7/H2it8DupgwjhwJhmnw5qNX42HlLxhyL0t4Z0Yma0BStL6kwylh5Zy6VBNOZ5RnRwRJARB0hMEdLABFdTM2mqlyku4D5BYJ8AMaEeAafVUXqijJ24F+BOUXGcvBdytjHwPWCQG4De/DFKlSyVs39A6MDwFO/xDzxXcFNoF0ZK+9M+nJQKxfp6UCUMNxTx1C3v/btuu8EUhUMwxDQLWA2sB045g09V8Z+zDNPkvKESfTKH88qY7uGA6BWodkkXhkNLAbE3R3DDUIeGGCm9+RpqQl/G8b5Y3MRIOSEuQs8AlpdpNcUAZM3m1qBk8AI4GWsu/td7VXGbiNvNiljz7hIV4A2XwDHDQNMYWH/fxTaz0wGJK7LgZG+zmxUxt4J9YSL9BJgs98U9vqmbZMytrd6TyaMi/RE4BowKT4kHb0y9kbAHCu98Xj2yoq9UBn7nsDUbqsDIlLAjgAQsbEzwZasc2urJyEwy1LGKi7SozKenwFMDZk/BCYtlA0Boc6y0fjLjxSdTxnrrDZGKbrv+5wkXcgDs8VX27ikh1mf9bAyVvbT6xKG7wG7gmF8/7sAOC5fH/xmXf5NRRl7OeDPyBwHgBWANGeyXZZN/z5pSZSxQx8IgK80p8LJLpaTIwAAAABJRU5ErkJggg=="/>
-                </svg>
-                <span class="name">Корзина</span>
-            </a>
-        </div>
-    </div>
-</header>
-<div class="container">
-    <ul class="breadcrumb">
-        <li><a href="index.html">Главная</a></li>
-        <li><a href="catalog.html">Каталог</a></li>
-        <li><a href="">Красители</a></li>
-        <li><a href="">Гелевый краситель YERO Красный</a></li>
-    </ul>
-</div>
-<div class="navigation">
-    <div class="container">
-        <nav class="main-nav drop-out-nav">
-            <div class="item has-sub-items">
-                <a href="">
-                    <div class="image-wrapper">
-                        <img class="image" src="/img/icons/navigation-icon/krasitely.png" alt="">
-                    </div>
-                    Красители</a>
-                <div class="sub-items">
-                    <div>
-                        <div class="item">
-                            <a href="">
-                                <div class="image-wrapper">
-                                    <img class="image" src="/img/icons/sub-icons/pishhevoj-krasitel.png" alt="">
-                                </div>
-                                Пищевые красители</a>
-                        </div>
-                        <div class="item">
-                            <a href="">
-                                <div class="image-wrapper">
-                                    <img class="image" src="/img/icons/sub-icons/krasiteli-zhirorastvorimye.png" alt="">
-                                </div>
-                                Жирорастворимые красители</a>
-                        </div>
-                        <div class="item has-sub-items">
-                            <a href="">
-                                <div class="image-wrapper">
-                                    <img class="image" src="/img/icons/sub-icons/gliterr.png" alt="">
-                                </div>
-                                Глиттер, блестки, кандурин</a>
-                        </div>
-                        <div class="item">
-                            <a href="">
-                                <div class="image-wrapper">
-                                    <img class="image" src="/img/icons/sub-icons/top-product.png" alt="">
-                                </div>
-                                Топ продукт</a>
-                        </div>
-                        <div class="item">
-                            <a href="">
-                                <div class="image-wrapper">
-                                    <img class="image" src="/img/icons/sub-icons/chokolate.png" alt="">
-                                </div>
-                                Красители для шоколада</a>
-                        </div>
-                        <div class="item has-sub-items">
-                            <a href="">
-                                <div class="image-wrapper">
-                                    <img class="image" src="/img/icons/sub-icons/pishhevoj-krasitel.png" alt="">
-                                </div>
-                                Жидкие для рисования</a>
-                        </div>
-                        <div class="item">
-                            <a href="">
-                                <div class="image-wrapper">
-                                    <img class="image" src="/img/icons/sub-icons/flomaster.png" alt="">
-                                </div>
-                                Фломастеры пищевые</a>
-                        </div>
-                        <div class="item">
-                            <a href="">
-                                <div class="image-wrapper">
-                                    <img class="image" src="/img/icons/sub-icons/stars.png" alt="">
-                                </div>
-                                Блестящие красивые</a>
+                <script>
+                    var productThumbs = new Swiper('.product-slider-pagination', {
+                        freeMode: true,
+                        watchSlidesVisibility: true,
+                        watchSlidesProgress: true,
+                        slidesPerView: 5,
+                        spaceBetween: 20,
+                        loop: true
+                    })
+                    new Swiper('.product-slider', {
+                        navigation: {
+                            nextEl: '.swiper-button-next',
+                            prevEl: '.swiper-button-prev'
+                        },
+                        slidesPerView: 1,
+                        loop: true,
+                        thumbs: {
+                            swiper: productThumbs,
+                        },
+                    });
+                </script>
+                <div class="product-info">
+                    <h2 class="product-name">
+                        Гелевый краситель YERO <br>Красный
+                    </h2>
+                    <span class="articl">Артикул: 564849</span>
+                    <div class="rating-mini">
+                        <div class="rating">
+                            <span class="active"></span>
+                            <span class="active"></span>
+                            <span class="active"></span>
+                            <span class="active"></span>
+                            <span class="active"></span>
                         </div>
                     </div>
-                    <div>
-                        <div class="item">
-                            <a href="">
-                                <div class="image-wrapper">
-                                    <img class="image" src="/img/icons/sub-icons/kreda.png" alt="">
-                                </div>
-                                Kreda</a>
-                        </div>
-                        <div class="item has-sub-items">
-                            <a href="">
-                                <div class="image-wrapper">
-                                    <img class="image" src="/img/icons/sub-icons/suxie.png" alt="">
-                                </div>
-                                Сухие красители</a>
-                            <div class="sub-items sub-items-2">
-                                <div class="item">
-                                    <a href="">
-                                        Сухие красители для крема
-                                    </a>
-                                </div>
-                                <div class="item">
-                                    <a href="">
-                                        Сухие красители для мастики
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item has-sub-items">
-                            <a href="">
-                                <div class="image-wrapper">
-                                    <img class="image" src="/img/icons/sub-icons/sprey.png" alt="">
-                                </div>
-                                Спреи и велюр</a>
-                        </div>
-                        <div class="item ">
-                            <a href="">
-                                <div class="image-wrapper">
-                                    <img class="image" src="/img/icons/sub-icons/krasiteli-americolor.png" alt="">
-                                </div>
-                                Набор красителей</a>
-                            <div class="sub-items sub-items-2">
-                                <div class="item">
-                                    <a href="">
-                                        Сухие красители для крема
-                                    </a>
-                                </div>
-                                <div class="item">
-                                    <a href="">
-                                        Сухие красители для мастики
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <a href="">
-                                <div class="image-wrapper">
-                                    <img class="image" src="/img/icons/sub-icons/krasiteli-gelevyye.png" alt="">
-                                </div>
-                                Americolor</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="item has-sub-items">
-                <a href="">
-                    <div class="image-wrapper"><img src="/img/icons/navigation-icon/ukrashenia.png" class="image"
-                                                    alt=""></div>
-                    Декор</a>
-            </div>
-            <div class="item has-sub-items">
-                <a href="">
-                    <div class="image-wrapper"><img src="/img/icons/navigation-icon/ingredienty.png" alt=""
-                                                    class="image"></div>
-                    Ингредиенты</a></div>
-            <div class="item">
-                <a href="">
-                    <div class="image-wrapper"><img class="image" src="/img/icons/navigation-icon/print.png" alt="">
-                    </div>
-                    Печать</a>
-            </div>
-            <div class="item has-sub-items">
-                <a href="">
-                    <div class="image-wrapper"><img class="image" src="/img/icons/navigation-icon/tools.png" alt="">
-                    </div>
-                    Инструменты</a>
-            </div>
-            <div class="item has-sub-items">
-                <a href="">
-                    <div class="image-wrapper"><img class="image" src="/img/icons/navigation-icon/chocolate.png" alt="">
-                    </div>
-                    Шоколад</a>
-            </div>
-            <div class="item">
-                <a href="">
-                    <div class="image-wrapper"><img class="image" src="/img/icons/navigation-icon/nozzles.png" alt="">
-                    </div>
-                    Насадки
-                </a>
-            </div>
-            <div class="item">
-                <a href="">
-                    <div class="image-wrapper"><img class="image" src="/img/icons/navigation-icon/packaging.png" alt="">
-                    </div>
-                    Упаковка</a>
-            </div>
-            <div class="item">
-                <a href="">
-                    <div class="image-wrapper"><img class="image" src="/img/icons/navigation-icon/mastic.png" alt="">
-                    </div>
-                    Шоколад</a>
-            </div>
-            <div class="item has-sub-items">
-                <a href="">
-                    <div class="image-wrapper"><img class="image" src="/img/icons/navigation-icon/vipechka.png" alt="">
-                    </div>
-                    Для Выпечки
-                </a>
-            </div>
-            <div class="item">
-                <a href="">
-                    <div class="image-wrapper"><img src="/img/icons/navigation-icon/caps.png" class="image" alt="">
-                    </div>
-                    Капсулы</a>
-            </div>
-        </nav>
-        <div class="product-slider-container">
-            <div class="slider">
-                <div class="swiper-container product-slider">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide"><img src="/img/product-photo.png" alt=""></div>
-                        <div class="swiper-slide"><img src="/img/product-photo.png" alt=""></div>
-                        <div class="swiper-slide"><img src="/img/product-photo.png" alt=""></div>
-                        <div class="swiper-slide"><img src="/img/product-photo.png" alt=""></div>
-                        <div class="swiper-slide"><img src="/img/product-photo.png" alt=""></div>
-                    </div>
-                    <div class="swiper-button-prev prev"><img class="prev" src="/img/arrow-left.png" alt=""></div>
-                    <div class="swiper-button-next next"><img class="next" src="/img/arrow-right.png" alt=""></div>
-                </div>
-                <div class="swiper-container product-slider-pagination">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide"><img src="/img/color-product1.png" alt=""></div>
-                        <div class="swiper-slide"><img src="/img/color-product2.png" alt=""></div>
-                        <div class="swiper-slide"><img src="/img/color-product3.png" alt=""></div>
-                        <div class="swiper-slide"><img src="/img/color-product4.png" alt=""></div>
-                        <div class="swiper-slide"><img src="/img/color-product5.png" alt=""></div>
-                    </div>
-                </div>
-            </div>
-
-            <script>
-                var productThumbs = new Swiper('.product-slider-pagination', {
-                    freeMode: true,
-                    watchSlidesVisibility: true,
-                    watchSlidesProgress: true,
-                    slidesPerView: 5,
-                    spaceBetween: 20,
-                    loop: true
-                })
-                new Swiper('.product-slider', {
-                    navigation: {
-                        nextEl: '.swiper-button-next',
-                        prevEl: '.swiper-button-prev'
-                    },
-                    slidesPerView: 1,
-                    loop: true,
-                    thumbs: {
-                        swiper: productThumbs,
-                    },
-                });
-            </script>
-            <div class="product-info">
-                <h2 class="product-name">
-                    Гелевый краситель YERO <br>Красный
-                </h2>
-                <span class="articl">Артикул: 564849</span>
-                <div class="rating-mini">
-                    <div class="rating">
-                        <span class="active"></span>
-                        <span class="active"></span>
-                        <span class="active"></span>
-                        <span class="active"></span>
-                        <span class="active"></span>
-                    </div>
-                </div>
-                <div class="like">
-                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="33"
-                         height="29" viewBox="0 0 33 29">
-                        <image id="Векторний_смарт-об_єкт_копія_31" data-name="Векторний смарт-об’єкт копія 31"
-                               width="33" height="29" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACEAAAAdCAYAAAAkXAW5AAADNElEQVRIib2XW4hNYRTHf3MwfIo80JQiW58YlyiFFJJLgwc8YPJgmPBAUTwoeSPlgaJ4oYySey4PJJdMHox5GHlA1K5PCMUTZbvk0sp/szv2mXMO5qyXPd83a/3//73W/ta3Th05lsTRLGANMBMYAZjfW6ATOAWccT58Lo5M4qgeWA40A1OBwcB34ClwG2hzPrQXx9UVgQwDjgJzivw+Av0y6ydAi/OhMxNrpMeA0d3Emd20F3Q+PE83ChmQCUCXBLwDdgITgXrngwMagLUSYETtSRwtVqw927X/RH4NiqsXzk7hGn6X+H5nIomjIcB9YChwA1jpfHhTolR9gX3ABsBKsg3YI7JDwBbnw6cSscZzApgLvAQmGU8qwuq8ArgDzM6rdw7gQQlJ7ZDzYWMFcSb2FjAdOO18aK5L4qgReAR8sXQ6H0I5oExG7trbKIvTSmUgJzZS2foAYwv6ks1OVCrATIQLgHX2rFSAYoPKYtbcG5inxblKQTJgr4Ej1cZl+FqM3zIxSpudZYL+t6V8owpqKKgZ1dJSvsGFDGlxU+lp+8VnIl7o75E1FpHyvShkarOgxiJSvk4TcV6L1iSOetWCXTytWp4v6Ki8Ahp1ZGphLeIz3nMFtejtIt6rbtaTWTD8vVpuN/70dNgVfA0YBJxM4qh/Dwkw3JPiuSbe3/OEbji7ym2muAIsreQiq0KAXVwXgIWAzRKT05v6V5/QRpOaiDkeV+D/EnBcuIbflB0V/hjvNCFZqgYqI8ucDx/+QYCV4KwE2FAzPzuR5YpQ4GTgqlq6zRhLSg05ZQRYiS9qdkgz0FXslytCAOOUieGAXb0LnQ+PqxAwRvF2Gp4p/mGebyFvk5/fiAVMA+4JqENTeCUCzK9Dcfc08OQK6FaEhFgzmQFc0rG6nsTRqjIC7P/X5W9xM4RT0kqWowi4lxrMZm3tBnY4H75nfAxrV6bx7Qe2Oh++lsOvSESGyAbZA8rgGWC18yFJ4shG+zb98PkGbHI+HK
+                    <div class="like">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="33"
+                             height="29" viewBox="0 0 33 29">
+                            <image id="Векторний_смарт-об_єкт_копія_31" data-name="Векторний смарт-об’єкт копія 31"
+                                   width="33" height="29" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACEAAAAdCAYAAAAkXAW5AAADNElEQVRIib2XW4hNYRTHf3MwfIo80JQiW58YlyiFFJJLgwc8YPJgmPBAUTwoeSPlgaJ4oYySey4PJJdMHox5GHlA1K5PCMUTZbvk0sp/szv2mXMO5qyXPd83a/3//73W/ta3Th05lsTRLGANMBMYAZjfW6ATOAWccT58Lo5M4qgeWA40A1OBwcB34ClwG2hzPrQXx9UVgQwDjgJzivw+Av0y6ydAi/OhMxNrpMeA0d3Emd20F3Q+PE83ChmQCUCXBLwDdgITgXrngwMagLUSYETtSRwtVqw927X/RH4NiqsXzk7hGn6X+H5nIomjIcB9YChwA1jpfHhTolR9gX3ABsBKsg3YI7JDwBbnw6cSscZzApgLvAQmGU8qwuq8ArgDzM6rdw7gQQlJ7ZDzYWMFcSb2FjAdOO18aK5L4qgReAR8sXQ6H0I5oExG7trbKIvTSmUgJzZS2foAYwv6ks1OVCrATIQLgHX2rFSAYoPKYtbcG5inxblKQTJgr4Ej1cZl+FqM3zIxSpudZYL+t6V8owpqKKgZ1dJSvsGFDGlxU+lp+8VnIl7o75E1FpHyvShkarOgxiJSvk4TcV6L1iSOetWCXTytWp4v6Ki8Ahp1ZGphLeIz3nMFtejtIt6rbtaTWTD8vVpuN/70dNgVfA0YBJxM4qh/Dwkw3JPiuSbe3/OEbji7ym2muAIsreQiq0KAXVwXgIWAzRKT05v6V5/QRpOaiDkeV+D/EnBcuIbflB0V/hjvNCFZqgYqI8ucDx/+QYCV4KwE2FAzPzuR5YpQ4GTgqlq6zRhLSg05ZQRYiS9qdkgz0FXslytCAOOUieGAXb0LnQ+PqxAwRvF2Gp4p/mGebyFvk5/fiAVMA+4JqENTeCUCzK9Dcfc08OQK6FaEhFgzmQFc0rG6nsTRqjIC7P/X5W9xM4RT0kqWowi4lxrMZm3tBnY4H75nfAxrV6bx7Qe2Oh++lsOvSESGyAbZA8rgGWC18yFJ4shG+zb98PkGbHI+HK
                     wUtyoREtIkAQN0A68HDgNTgPcmxPlwtRrMqkVIyHjgsk5OanYCFjkfHlSL1+2HWcpEZG9uH6DV3J5T/kYAwA8S0BtlGQveQwAAAABJRU5ErkJggg=="/>
-                    </svg>
-                    <a href="">В избранное</a>
-                </div>
-                <p class="quality">
-                    <span>Гелевый краситель YERO</span> – абсолютно безопасный водорастворимый концентрированный гелевый
-                    краситель, подходит как для профессионального, так и для любительского использования
-                </p>
-                <div class="buttons">
-                    <div class="product-count-and-price">
-                        <div class="product-price">
-                            <div class="price" data-price="100">100 р.</div>
-                        </div>
-                        <div class="product-count">
-                            <button onclick="incrementCount(this)" class="inc">+</button>
-                            <input value="1" readonly="true" name="product_count">
-                            <button class="dec" onclick="decrementCount(this)">-</button>
-                        </div>
-                    </div>
-                    <div class="order-buttons">
-                        <button class="btn">В корзину</button>
-                        <button class="one-click">Купить в один клик</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="product-description">
-    <div class="container">
-        <h2>Описание товара</h2>
-        <h5 class="advantages">Преимущества:</h5>
-        <ol>
-            <li>Гелевая текстура позволяет расходовать краситель более экономно, достигая при этом насыщенного и
-                стойкого цвета.
-            </li>
-            <li>Краска без труда смывается с рук и рабочих поверхностей.</li>
-            <li>После добавления красителя в крем или айсинг, текстура остается неизменной.</li>
-            <li>Гелевые красители отлично смешиваются между собой, так что вы можете создать собственный, уникальный
-                оттенок.
-            </li>
-        </ol>
-        <p>Используются для придания цвета: кремам, тесту, мастике, взбитым сливкам, айсингу.</p> <br>
-        <p>
-            Состав: сироп глюкозы, пропиленгликоль, камедь ксантановая, лимонная кислота, сорбат калия, бензонат натрия,
-            красители пищевые
-            Е129, Е124. Продукт не содержит составляющих животного происхождения</p> <br>
-
-        <p>Условия хранения: хранить при температуре от 15 до 25°<br>
-            Срок годности: 18 месяцев <br>
-            Объем: 10г <br>
-            Производитель: Yero Colors, Украина</p>
-        <a href="">показать еще...</a>
-    </div>
-</div>
-<div class="popular-goods">
-    <h2>С этим товаром покупают</h2>
-    <div class="container">
-        <div style="position: relative;">
-            <img class="slider-prev" id="bm-prev" src="/img/arrow-left.png">
-            <img class="slider-next" id="bm-next" src="/img/arrow-right.png">
-            <div class="swiper-container buy-more">
-                <div class="swiper-wrapper">
-                    <div class="product swiper-slide">
-                        <?php template('product-2'); ?>
-                    </div>
-                    <div class="product swiper-slide">
-                        <?php template('product-2'); ?>
-                    </div>
-                    <div class="product swiper-slide">
-                        <?php template('product-2'); ?>
-                    </div>
-                    <div class="product swiper-slide">
-                        <?php template('product-2'); ?>
-                    </div>
-                    <div class="product swiper-slide">
-                        <?php template('product-2'); ?>
-                    </div>
-                    <div class="product swiper-slide">
-                        <?php template('product-2'); ?>
-                    </div>
-                    <div class="product swiper-slide">
-                        <?php template('product-2'); ?>
-                    </div>
-                    <div class="product swiper-slide">
-                        <?php template('product-2'); ?>
-                    </div>
-                    <div class="product swiper-slide">
-                        <?php template('product-2'); ?>
-                    </div>
-                    <div class="product swiper-slide">
-                        <?php template('product-2'); ?>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="footer">
-    <div class="container">
-        <div class="footer-container">
-            <div class="contacts">
-                <img class="logo" src="/img/Logo.png" alt="">
-                <a href="" class="item ">
-                    <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
-                         xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="25px" height="25px"
-                         viewBox="-41 164.9 512 512" enable-background="new -41 164.9 512 512" xml:space="preserve">
-<g>
-    <g>
-        <path fill="#FFFFFF" d="M215,676.9c-68.4,0-132.7-26.6-181-75c-48.4-48.4-75-112.6-75-181s26.6-132.7,75-181
-			c48.4-48.4,112.6-75,181-75s132.7,26.6,181,75c48.4,48.4,75,112.6,75,181s-26.6,132.7-75,181C347.7,650.3,283.4,676.9,215,676.9
-			L215,676.9z M215,194.9c-60.4,0-117.1,23.5-159.8,66.2S-11,360.5-11,420.9S12.5,538,55.2,580.7c42.7,42.7,99.4,66.2,159.8,66.2
-			s117.1-23.5,159.8-66.2C417.5,538,441,481.3,441,420.9s-23.5-117.1-66.2-159.8S275.4,194.9,215,194.9z"/>
-    </g>
-    <g>
-        <path fill="#FFFFFF" d="M200,224.9h30v40h-30V224.9z"/>
-    </g>
-    <g>
-        <path fill="#FFFFFF" d="M314.6,300l28.3-28.3l21.2,21.2l-28.3,28.3L314.6,300z"/>
-    </g>
-    <g>
-        <path fill="#FFFFFF" d="M370.9,405.9h40v30h-40V405.9z"/>
-    </g>
-    <g>
-        <path fill="#FFFFFF" d="M314.6,541.8l21.2-21.2l28.3,28.3l-21.2,21.2L314.6,541.8z"/>
-    </g>
-    <g>
-        <path fill="#FFFFFF" d="M200,576.8h30v40h-30V576.8z"/>
-    </g>
-    <g>
-        <path fill="#FFFFFF" d="M65.8,548.8l28.3-28.3l21.2,21.2L87,570L65.8,548.8z"/>
-    </g>
-    <g>
-        <path fill="#FFFFFF" d="M19,405.9h40v30H19V405.9z"/>
-    </g>
-    <g>
-        <path fill="#FFFFFF" d="M65.8,292.9L87,271.7l28.3,28.3l-21.2,21.2L65.8,292.9z"/>
-    </g>
-    <g>
-        <path fill="#FFFFFF" d="M320.9,435.9H200V315h30v90.9h90.9V435.9z"/>
-    </g>
-</g>
-</svg>
-                    Режим работы с 9 до 21 ежедневно</a>
-                <a href="" class="item ">
-                    <svg class="icon" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
-                         xmlns:xlink="http://www.w3.org/1999/xlink" width="20"
-                         height="20" x="0px" y="0px"
-                         viewBox="-84 207.9 426 426" enable-background="new -84 207.9 426 426" xml:space="preserve">
-<g>
-    <path fill="#FFFFFF" d="M129.3,643.9c-4.7,0-9.1-2.2-11.9-6c-0.3-0.4-33.4-45.1-65.7-102.7c-44.1-78.8-66.5-144-66.5-194
-		c0-79,64.3-143.4,143.4-143.4h0.6c79.1,0,143.4,64.3,143.4,143.4c0,41.5-22.2,104.2-66,186.2c-31.7,59.3-63.7,107.8-65,109.8
-		c-2.7,4-7.1,6.5-11.9,6.6C129.6,643.9,129.5,643.9,129.3,643.9z M129.3,623.9v10V623.9C129.3,623.9,129.3,623.9,129.3,623.9
-		L129.3,623.9z M128.7,217.9c-68,0-123.4,55.3-123.4,123.4c0,46.5,21.5,108.4,64,184.2c24.9,44.4,50,80.6,59.9,94.4
-		c9.7-15,34.9-54.9,59.9-101.9c42.2-79.1,63.7-138.6,63.7-176.8c0-68-55.4-123.4-123.4-123.4H128.7z M129,416.4
-		c-39.6,0-71.9-32.2-71.9-71.9s32.2-71.9,71.9-71.9c39.6,0,71.9,32.2,71.9,71.9S168.6,416.4,129,416.4z M129,292.7
-		c-28.6,0-51.9,23.3-51.9,51.9s23.3,51.9,51.9,51.9c28.6,0,51.9-23.3,51.9-51.9S157.6,292.7,129,292.7z"/>
-</g>
-</svg>
-
-                    Подольск, улица Клемента Готвальда д. 9 </a>
-                <div class="number-and-whatsapp item">
-                    <a href="" class="item">
-                        <svg class="icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                             width="20"
-                             height="20" viewBox="0 0 20 20">
-                            <image id="Векторний_смарт-об_єкт" data-name="Векторний смарт-об’єкт" width="20" height="20"
-                                   xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAABfklEQVQ4jaWUvy9DURiG3yNsnaiIRCORkpDUQIJFhKFjF00MTMRiUxajwSqN+AMYzVKxicRkMBhqkSoN/4TEI19yGidXf7jXme5973ee+/1W8wCDwBHwAdwCvUpweoAMcCrpQdKnpGlJdUn7SYDmWQPYBVKBNgC8AeNJgO9t9DUfuovD65H0DExEPzjnLiR9SVqJC7yXtNTCw4KkUUnVOEC7uABUItoMUAOysWD+svOXM4G2CRzHhgWAElAO3seAatyChMAUUDdQoF0Bxf94uQ5cN70CcsALMJQUaLm8tPADzXL52AoKDAPLHdMC9APWl/kI1DwtBt5nfSFvfPP/6uMQOgm8AvOBlvM5fbLqe1hBPxNl9gdtF4rBvFE+olv1t4DZiG6zfwbcdfJ0yodf+kv7AGnbCx0NLaeSziX1SdpxztU62B76Ue76Z6v+hu/TMjDSwsb62NZguiswcsnCt4JUgO1mdYE94MSeY4+Wz6d1wKqkOUm2QGzTLzrnGt+8NIzM5ZsDHQAAAABJRU5ErkJggg=="/>
                         </svg>
-                        +7(916)100-60-45
-                    </a>
-                    <a href="" class="whats-app item">Пишите в WhatsApp
-                        <svg class="whats-app-icon" enable-background="new 0 0 24 24" height="25" viewBox="0 0 24 24"
-                             width="25"
-                             xmlns="http://www.w3.org/2000/svg">
-                            <path d="m20.52 3.449c-2.28-2.204-5.28-3.449-8.475-3.449-9.17 0-14.928 9.935-10.349 17.838l-1.696 6.162 6.335-1.652c2.76 1.491 5.021 1.359 5.716 1.447 10.633 0 15.926-12.864 8.454-20.307z"
-                                  fill="#eceff1"/>
-                            <path d="m12.067 21.751-.006-.001h-.016c-3.182 0-5.215-1.507-5.415-1.594l-3.75.975 1.005-3.645-.239-.375c-.99-1.576-1.516-3.391-1.516-5.26 0-8.793 10.745-13.19 16.963-6.975 6.203 6.15 1.848 16.875-7.026 16.875z"
-                                  fill="#4caf50"/>
-                            <path d="m17.507 14.307-.009.075c-.301-.15-1.767-.867-2.04-.966-.613-.227-.44-.036-1.617 1.312-.175.195-.349.21-.646.075-.3-.15-1.263-.465-2.403-1.485-.888-.795-1.484-1.77-1.66-2.07-.293-.506.32-.578.878-1.634.1-.21.049-.375-.025-.524-.075-.15-.672-1.62-.922-2.206-.24-.584-.487-.51-.672-.51-.576-.05-.997-.042-1.368.344-1.614 1.774-1.207 3.604.174 5.55 2.714 3.552 4.16 4.206 6.804 5.114.714.227 1.365.195 1.88.121.574-.091 1.767-.721 2.016-1.426.255-.705.255-1.29.18-1.425-.074-.135-.27-.21-.57-.345z"
-                                  fill="#fafafa"/>
-                        </svg>
-                    </a>
-                </div>
-                <div class="item delivery item">
-                    <svg class="icon" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
-                         xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="35"
-                         height="30"
-                         viewBox="0 0 595.3 841.9" enable-background="new 0 0 595.3 841.9" xml:space="preserve">
-<path fill="#FFFFFF" d="M382.7,551.3H155l-2-4.4c-10.5-23.2-34.3-38.7-59.1-38.7c-24.8,0-48.6,15.6-59.1,38.7l-2,4.4H11.4
-	c-10,0-17.9-8.1-17.9-18.4v-84.7h389.2V551.3z M164.5,536.3h203.2v-73.1H8.5V533c0,0.6,0.1,3.4,2.9,3.4h11.9
-	c13.9-26.4,41.1-43.1,70.6-43.1C123.4,493.2,150.6,510,164.5,536.3z"/>
-                        <path fill="#FFFFFF" d="M93.9,634.2L93.9,634.2c-31.1,0-56.4-25.3-56.4-56.3c0-31.1,25.3-56.4,56.4-56.4s56.4,25.3,56.4,56.4
-	C150.2,608.9,124.9,634.2,93.9,634.2z M93.9,536.5c-22.8,0-41.4,18.5-41.4,41.4c0,22.8,18.5,41.3,41.3,41.3
-	c22.8,0,41.3-18.6,41.4-41.4C135.2,555,116.7,536.5,93.9,536.5z"/>
-                        <path fill="#FFFFFF" d="M589.9,551.3h-32.4l-2-4.4c-10.5-23.2-34.3-38.7-59.1-38.7c-24.8,0-48.6,15.6-59.1,38.7l-2,4.4h-40.5V391.9
-	H549l48.2,21.2c6.7,3.2,10.8,10,10.6,17.4V533C607.8,543.3,599.9,551.3,589.9,551.3z M567,536.3h22.9c2.7,0,2.9-2.8,2.9-3.4l0-102.9
-	c0-1.4-0.7-2.8-2-3.5l-44.9-19.7h-136v129.5h16c13.9-26.4,41.1-43.1,70.6-43.1C525.9,493.2,553.1,510,567,536.3z"/>
-                        <path fill="#FFFFFF" d="M543.1,374.7H394.8v-93h74.7c15.4-0.2,29.5,8.2,36.7,21.9L543.1,374.7z M409.8,359.7h108.6l-25.6-49.2
-	c-4.4-8.5-13.2-13.8-22.8-13.8l-0.5,0h-59.8V359.7z"/>
-                        <path fill="#FFFFFF" d="M382.7,434.1H-6.5v-186c0-22.8,18.2-41.4,40.5-41.4h308c11,0.1,21.2,4.4,28.9,12.2
-	c7.7,7.8,11.8,18.1,11.8,29.1l-7.5,0.1l7.5,0V434.1z M8.5,419.1h359.2l0-171.2c0.1-7-2.6-13.5-7.5-18.5c-4.9-4.9-11.4-7.7-18.3-7.7
-	l-308,0c-14.3,0-25.5,11.6-25.5,26.4V419.1z"/>
-                        <path fill="#FFFFFF" d="M496.4,634.2L496.4,634.2c-31.1,0-56.4-25.3-56.4-56.3c0-31.1,25.3-56.4,56.3-56.4
-	c31.1,0,56.4,25.3,56.4,56.3C552.7,608.9,527.5,634.2,496.4,634.2z M496.4,536.5c-22.8,0-41.3,18.6-41.3,41.4
-	c0,22.8,18.6,41.3,41.3,41.3l0,7.5l0-7.5c22.8,0,41.3-18.6,41.3-41.4C537.8,555,519.2,536.5,496.4,536.5z"/>
-</svg>
-                    <div>Бесплатная доставка при заказе <a class="delivery-link">от 3000</a> рублей!</div>
-                </div>
-                <div class="social">
-                    <a href=""><img src="/img/instagram.png" alt="instagram"></a>
-                    <a href=""><img src="/img/whatsap.png" alt=""></a>
-                </div>
-                <a class="seo" href=""><img src="/img/seo.png" alt="seo">Создание и поддержка сайта</a>
-            </div>
-            <div class="about">
-                <div class="info">
-                    <h4>информация:</h4>
-                    <a class="item" href="">Корзина</a>
-                    <a class="item" href="">Личный кабинет</a>
-                    <a class="item" href="">Оплата и доставка</a>
-                    <a class="item" href="">О нас</a>
-                    <a class="item" href="">Производители</a>
-                    <a class="item" href="">Контакты</a>
-                    <a class="item" href="">Публичная оферта</a>
-                    <a class="item" href="">олитика конфиденциальности</a>
-                    <div class="copyright">Azart Cake 2021. Все права защищены</div>
-                </div>
-                <div class="info">
-                    <h4>рецепты магазина:</h4>
-                    <a class="item" href="">Воздушные шарики Choco Crisp</a>
-                    <a class="item" href="">Пломбир в вафельном рожке</a>
-                    <a class="item" href="">Муссовые пирожные</a>
-                    <a class="item" href="">Творожные сырки</a>
-                    <a class="item" href="">Шоколадные яйца</a>
+                        <a href="">В избранное</a>
+                    </div>
+                    <p class="quality">
+                        <span>Гелевый краситель YERO</span> – абсолютно безопасный водорастворимый концентрированный
+                        гелевый
+                        краситель, подходит как для профессионального, так и для любительского использования
+                    </p>
+                    <div class="buttons">
+                        <div class="product-count-and-price">
+                            <div class="product-price">
+                                <div class="price" data-price="100">100 р.</div>
+                            </div>
+                            <div class="product-count">
+                                <button onclick="incrementCount(this)" class="inc">+</button>
+                                <input value="1" readonly="true" name="product_count">
+                                <button class="dec" onclick="decrementCount(this)">-</button>
+                            </div>
+                        </div>
+                        <div class="order-buttons">
+                            <button class="btn">В корзину</button>
+                            <button class="one-click">Купить в один клик</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-</div>
+    <div class="product-description">
+        <div class="container">
+            <h2>Описание товара</h2>
+            <h5 class="advantages">Преимущества:</h5>
+            <ol>
+                <li>Гелевая текстура позволяет расходовать краситель более экономно, достигая при этом насыщенного и
+                    стойкого цвета.
+                </li>
+                <li>Краска без труда смывается с рук и рабочих поверхностей.</li>
+                <li>После добавления красителя в крем или айсинг, текстура остается неизменной.</li>
+                <li>Гелевые красители отлично смешиваются между собой, так что вы можете создать собственный, уникальный
+                    оттенок.
+                </li>
+            </ol>
+            <p>Используются для придания цвета: кремам, тесту, мастике, взбитым сливкам, айсингу.</p> <br>
+            <p>
+                Состав: сироп глюкозы, пропиленгликоль, камедь ксантановая, лимонная кислота, сорбат калия, бензонат
+                натрия,
+                красители пищевые
+                Е129, Е124. Продукт не содержит составляющих животного происхождения</p> <br>
 
-</script>
-<script>
-    new Swiper('.buy-more', {
-        navigation: {
-            nextEl: '#bm-next',
-            prevEl: '#bm-prev'
-        },
-        slidesPerView: 4,
-        loop: true,
-        spaceBetween: 20
-    });
+            <p>Условия хранения: хранить при температуре от 15 до 25°<br>
+                Срок годности: 18 месяцев <br>
+                Объем: 10г <br>
+                Производитель: Yero Colors, Украина</p>
+            <a href="">показать еще...</a>
+        </div>
+    </div>
+    <div class="popular-goods">
+        <h2>С этим товаром покупают</h2>
+        <div class="container">
+            <div style="position: relative;">
+                <img class="slider-prev" id="bm-prev" src="/img/arrow-left.png">
+                <img class="slider-next" id="bm-next" src="/img/arrow-right.png">
+                <div class="swiper-container buy-more">
+                    <div class="swiper-wrapper">
+                        <div class="product swiper-slide">
+                            <?php template('product-2'); ?>
+                        </div>
+                        <div class="product swiper-slide">
+                            <?php template('product-2'); ?>
+                        </div>
+                        <div class="product swiper-slide">
+                            <?php template('product-2'); ?>
+                        </div>
+                        <div class="product swiper-slide">
+                            <?php template('product-2'); ?>
+                        </div>
+                        <div class="product swiper-slide">
+                            <?php template('product-2'); ?>
+                        </div>
+                        <div class="product swiper-slide">
+                            <?php template('product-2'); ?>
+                        </div>
+                        <div class="product swiper-slide">
+                            <?php template('product-2'); ?>
+                        </div>
+                        <div class="product swiper-slide">
+                            <?php template('product-2'); ?>
+                        </div>
+                        <div class="product swiper-slide">
+                            <?php template('product-2'); ?>
+                        </div>
+                        <div class="product swiper-slide">
+                            <?php template('product-2'); ?>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-    productImagesSlider();
-</script>
-</body>
-</html>
+    </script>
+    <script>
+        new Swiper('.buy-more', {
+            navigation: {
+                nextEl: '#bm-next',
+                prevEl: '#bm-prev'
+            },
+            slidesPerView: 4,
+            loop: true,
+            spaceBetween: 20
+        });
+
+        productImagesSlider();
+    </script>
+<?php
+template('footer');
+?>
