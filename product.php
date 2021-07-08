@@ -9,8 +9,11 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="./styles/style.css">
     <title>Document</title>
-    <script src="/js/functions.js"></script>
     <script src="/js/jquery-3.6.0.min.js"></script>
+    <script src="/js/functions.js"></script>
+    <?php
+    require_once __DIR__ . '/functions.php';
+    ?>
 </head>
 <body>
 <div class="header-contacts">
@@ -21,7 +24,7 @@
                  height="20" x="0px" y="0px"
                  viewBox="-84 207.9 426 426" enable-background="new -84 207.9 426 426" xml:space="preserve">
 <g>
-	<path fill="#FFFFFF" d="M129.3,643.9c-4.7,0-9.1-2.2-11.9-6c-0.3-0.4-33.4-45.1-65.7-102.7c-44.1-78.8-66.5-144-66.5-194
+    <path fill="#FFFFFF" d="M129.3,643.9c-4.7,0-9.1-2.2-11.9-6c-0.3-0.4-33.4-45.1-65.7-102.7c-44.1-78.8-66.5-144-66.5-194
 		c0-79,64.3-143.4,143.4-143.4h0.6c79.1,0,143.4,64.3,143.4,143.4c0,41.5-22.2,104.2-66,186.2c-31.7,59.3-63.7,107.8-65,109.8
 		c-2.7,4-7.1,6.5-11.9,6.6C129.6,643.9,129.5,643.9,129.3,643.9z M129.3,623.9v10V623.9C129.3,623.9,129.3,623.9,129.3,623.9
 		L129.3,623.9z M128.7,217.9c-68,0-123.4,55.3-123.4,123.4c0,46.5,21.5,108.4,64,184.2c24.9,44.4,50,80.6,59.9,94.4
@@ -455,142 +458,44 @@
 <div class="popular-goods">
     <h2>С этим товаром покупают</h2>
     <div class="container">
-        <div class="swiper-container buy-more">
-            <div class="swiper-wrapper">
-                <div class="product swiper-slide">
-                    <a href="">
-                        <div class="like">
-                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                 width="33"
-                                 height="29" viewBox="0 0 33 29">
-                                <image id="Векторний_смарт-об_єкт_копія_31" data-name="Векторний смарт-об’єкт копія 31"
-                                       width="33" height="29" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACEAAAAdCAYAAAAkXAW5AAADNElEQVRIib2XW4hNYRTHf3MwfIo80JQiW58YlyiFFJJLgwc8YPJgmPBAUTwoeSPlgaJ4oYySey4PJJdMHox5GHlA1K5PCMUTZbvk0sp/szv2mXMO5qyXPd83a/3//73W/ta3Th05lsTRLGANMBMYAZjfW6ATOAWccT58Lo5M4qgeWA40A1OBwcB34ClwG2hzPrQXx9UVgQwDjgJzivw+Av0y6ydAi/OhMxNrpMeA0d3Emd20F3Q+PE83ChmQCUCXBLwDdgITgXrngwMagLUSYETtSRwtVqw927X/RH4NiqsXzk7hGn6X+H5nIomjIcB9YChwA1jpfHhTolR9gX3ABsBKsg3YI7JDwBbnw6cSscZzApgLvAQmGU8qwuq8ArgDzM6rdw7gQQlJ7ZDzYWMFcSb2FjAdOO18aK5L4qgReAR8sXQ6H0I5oExG7trbKIvTSmUgJzZS2foAYwv6ks1OVCrATIQLgHX2rFSAYoPKYtbcG5inxblKQTJgr4Ej1cZl+FqM3zIxSpudZYL+t6V8owpqKKgZ1dJSvsGFDGlxU+lp+8VnIl7o75E1FpHyvShkarOgxiJSvk4TcV6L1iSOetWCXTytWp4v6Ki8Ahp1ZGphLeIz3nMFtejtIt6rbtaTWTD8vVpuN/70dNgVfA0YBJxM4qh/Dwkw3JPiuSbe3/OEbji7ym2muAIsreQiq0KAXVwXgIWAzRKT05v6V5/QRpOaiDkeV+D/EnBcuIbflB0V/hjvNCFZqgYqI8ucDx/+QYCV4KwE2FAzPzuR5YpQ4GTgqlq6zRhLSg05ZQRYiS9qdkgz0FXslytCAOOUieGAXb0LnQ+PqxAwRvF2Gp4p/mGebyFvk5/fiAVMA+4JqENTeCUCzK9Dcfc08OQK6FaEhFgzmQFc0rG6nsTRqjIC7P/X5W9xM4RT0kqWowi4lxrMZm3tBnY4H75nfAxrV6bx7Qe2Oh++lsOvSESGyAbZA8rgGWC18yFJ4shG+zb98PkGbHI+HK
-                    wUtyoREtIkAQN0A68HDgNTgPcmxPlwtRrMqkVIyHjgsk5OanYCFjkfHlSL1+2HWcpEZG9uH6DV3J5T/kYAwA8S0BtlGQveQwAAAABJRU5ErkJggg=="/>
-                            </svg>
-                        </div>
-                    </a>
-                    <div class="swiper-container product-images-slider">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide"><img src="./img/product/product-img1.png" alt=""></div>
-                            <div class="swiper-slide"><img src="./img/product/product-img1.png" alt=""></div>
-                            <div class="swiper-slide"><img src="./img/product/product-img1.png" alt=""></div>
-                        </div>
-                        <div class="swiper-button-prev"></div>
-                        <div class="swiper-button-next"></div>
+        <div style="position: relative;">
+            <img class="slider-prev" id="bm-prev" src="/img/arrow-left.png">
+            <img class="slider-next" id="bm-next" src="/img/arrow-right.png">
+            <div class="swiper-container buy-more">
+                <div class="swiper-wrapper">
+                    <div class="product swiper-slide">
+                        <?php template('product-2'); ?>
                     </div>
-                    <h3>Капли шоколадные(глазурь)</h3>
-                    <div class="input-group">
-                        <input type="button" value="+">
-                        <input class="text" type="text" step="1" name="quantity" value="1">
-                        <input type="button" value="-">
-                        <div class="price"> 1700 p.</div>
+                    <div class="product swiper-slide">
+                        <?php template('product-2'); ?>
                     </div>
-                    <button class="btn">В корзину</button>
-                    <button class="one-click">Купить в один клик</button>
-                </div>
-                <div class="product swiper-slide">
-                    <a href="">
-                        <div class="like">
-                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                 width="33"
-                                 height="29" viewBox="0 0 33 29">
-                                <image id="Векторний_смарт-об_єкт_копія_31" data-name="Векторний смарт-об’єкт копія 31"
-                                       width="33" height="29" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACEAAAAdCAYAAAAkXAW5AAADNElEQVRIib2XW4hNYRTHf3MwfIo80JQiW58YlyiFFJJLgwc8YPJgmPBAUTwoeSPlgaJ4oYySey4PJJdMHox5GHlA1K5PCMUTZbvk0sp/szv2mXMO5qyXPd83a/3//73W/ta3Th05lsTRLGANMBMYAZjfW6ATOAWccT58Lo5M4qgeWA40A1OBwcB34ClwG2hzPrQXx9UVgQwDjgJzivw+Av0y6ydAi/OhMxNrpMeA0d3Emd20F3Q+PE83ChmQCUCXBLwDdgITgXrngwMagLUSYETtSRwtVqw927X/RH4NiqsXzk7hGn6X+H5nIomjIcB9YChwA1jpfHhTolR9gX3ABsBKsg3YI7JDwBbnw6cSscZzApgLvAQmGU8qwuq8ArgDzM6rdw7gQQlJ7ZDzYWMFcSb2FjAdOO18aK5L4qgReAR8sXQ6H0I5oExG7trbKIvTSmUgJzZS2foAYwv6ks1OVCrATIQLgHX2rFSAYoPKYtbcG5inxblKQTJgr4Ej1cZl+FqM3zIxSpudZYL+t6V8owpqKKgZ1dJSvsGFDGlxU+lp+8VnIl7o75E1FpHyvShkarOgxiJSvk4TcV6L1iSOetWCXTytWp4v6Ki8Ahp1ZGphLeIz3nMFtejtIt6rbtaTWTD8vVpuN/70dNgVfA0YBJxM4qh/Dwkw3JPiuSbe3/OEbji7ym2muAIsreQiq0KAXVwXgIWAzRKT05v6V5/QRpOaiDkeV+D/EnBcuIbflB0V/hjvNCFZqgYqI8ucDx/+QYCV4KwE2FAzPzuR5YpQ4GTgqlq6zRhLSg05ZQRYiS9qdkgz0FXslytCAOOUieGAXb0LnQ+PqxAwRvF2Gp4p/mGebyFvk5/fiAVMA+4JqENTeCUCzK9Dcfc08OQK6FaEhFgzmQFc0rG6nsTRqjIC7P/X5W9xM4RT0kqWowi4lxrMZm3tBnY4H75nfAxrV6bx7Qe2Oh++lsOvSESGyAbZA8rgGWC18yFJ4shG+zb98PkGbHI+HK
-                    wUtyoREtIkAQN0A68HDgNTgPcmxPlwtRrMqkVIyHjgsk5OanYCFjkfHlSL1+2HWcpEZG9uH6DV3J5T/kYAwA8S0BtlGQveQwAAAABJRU5ErkJggg=="/>
-                            </svg>
-                        </div>
-                    </a>
-                    <div class="swiper-container product-images-slider">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide"><img src="./img/product/product-img2.png" alt=""></div>
-                            <div class="swiper-slide"><img src="./img/product/product-img2.png" alt=""></div>
-                            <div class="swiper-slide"><img src="./img/product/product-img2.png" alt=""></div>
-                        </div>
-                        <div class="swiper-button-prev"></div>
-                        <div class="swiper-button-next"></div>
-                        <div class="swiper-pagination"></div>
+                    <div class="product swiper-slide">
+                        <?php template('product-2'); ?>
                     </div>
-                    <h3>Капли шоколадные(глазурь)</h3>
-                    <div class="input-group">
-                        <input type="button" value="+">
-                        <input class="text" type="text" step="1" name="quantity" value="1">
-                        <input type="button" value="-">
-                        <div class="price"> 560 p.</div>
+                    <div class="product swiper-slide">
+                        <?php template('product-2'); ?>
                     </div>
-                    <button class="btn">В корзину</button>
-                    <button class="one-click">Купить в один клик</button>
-                </div>
-                <div class="product swiper-slide">
-                    <a href="">
-                        <div class="like">
-                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                 width="33"
-                                 height="29" viewBox="0 0 33 29">
-                                <image id="Векторний_смарт-об_єкт_копія_31" data-name="Векторний смарт-об’єкт копія 31"
-                                       width="33" height="29" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACEAAAAdCAYAAAAkXAW5AAADNElEQVRIib2XW4hNYRTHf3MwfIo80JQiW58YlyiFFJJLgwc8YPJgmPBAUTwoeSPlgaJ4oYySey4PJJdMHox5GHlA1K5PCMUTZbvk0sp/szv2mXMO5qyXPd83a/3//73W/ta3Th05lsTRLGANMBMYAZjfW6ATOAWccT58Lo5M4qgeWA40A1OBwcB34ClwG2hzPrQXx9UVgQwDjgJzivw+Av0y6ydAi/OhMxNrpMeA0d3Emd20F3Q+PE83ChmQCUCXBLwDdgITgXrngwMagLUSYETtSRwtVqw927X/RH4NiqsXzk7hGn6X+H5nIomjIcB9YChwA1jpfHhTolR9gX3ABsBKsg3YI7JDwBbnw6cSscZzApgLvAQmGU8qwuq8ArgDzM6rdw7gQQlJ7ZDzYWMFcSb2FjAdOO18aK5L4qgReAR8sXQ6H0I5oExG7trbKIvTSmUgJzZS2foAYwv6ks1OVCrATIQLgHX2rFSAYoPKYtbcG5inxblKQTJgr4Ej1cZl+FqM3zIxSpudZYL+t6V8owpqKKgZ1dJSvsGFDGlxU+lp+8VnIl7o75E1FpHyvShkarOgxiJSvk4TcV6L1iSOetWCXTytWp4v6Ki8Ahp1ZGphLeIz3nMFtejtIt6rbtaTWTD8vVpuN/70dNgVfA0YBJxM4qh/Dwkw3JPiuSbe3/OEbji7ym2muAIsreQiq0KAXVwXgIWAzRKT05v6V5/QRpOaiDkeV+D/EnBcuIbflB0V/hjvNCFZqgYqI8ucDx/+QYCV4KwE2FAzPzuR5YpQ4GTgqlq6zRhLSg05ZQRYiS9qdkgz0FXslytCAOOUieGAXb0LnQ+PqxAwRvF2Gp4p/mGebyFvk5/fiAVMA+4JqENTeCUCzK9Dcfc08OQK6FaEhFgzmQFc0rG6nsTRqjIC7P/X5W9xM4RT0kqWowi4lxrMZm3tBnY4H75nfAxrV6bx7Qe2Oh++lsOvSESGyAbZA8rgGWC18yFJ4shG+zb98PkGbHI+HK
-                    wUtyoREtIkAQN0A68HDgNTgPcmxPlwtRrMqkVIyHjgsk5OanYCFjkfHlSL1+2HWcpEZG9uH6DV3J5T/kYAwA8S0BtlGQveQwAAAABJRU5ErkJggg=="/>
-                            </svg>
-                        </div>
-                    </a>
-                    <div class="swiper-container product-images-slider">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide"><img src="./img/product/product-img3.png" alt=""></div>
-                            <div class="swiper-slide"><img src="./img/product/product-img3.png" alt=""></div>
-                            <div class="swiper-slide"><img src="./img/product/product-img3.png" alt=""></div>
-                        </div>
-                        <div class="swiper-button-prev"></div>
-                        <div class="swiper-button-next"></div>
-                        <div class="swiper-pagination"></div>
+                    <div class="product swiper-slide">
+                        <?php template('product-2'); ?>
                     </div>
-                    <h3>Капли шоколадные(глазурь)</h3>
-                    <div class="input-group">
-                        <input type="button" value="+">
-                        <input class="text" type="text" step="1" name="quantity" value="1">
-                        <input type="button" value="-">
-                        <div class="price"> 720 p.</div>
+                    <div class="product swiper-slide">
+                        <?php template('product-2'); ?>
                     </div>
-                    <button class="btn">В корзину</button>
-                    <button class="one-click">Купить в один клик</button>
-                </div>
-                <div class="product swiper-slide">
-                    <a href="">
-                        <div class="like">
-                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                 width="33"
-                                 height="29" viewBox="0 0 33 29">
-                                <image id="Векторний_смарт-об_єкт_копія_31" data-name="Векторний смарт-об’єкт копія 31"
-                                       width="33" height="29" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACEAAAAdCAYAAAAkXAW5AAADNElEQVRIib2XW4hNYRTHf3MwfIo80JQiW58YlyiFFJJLgwc8YPJgmPBAUTwoeSPlgaJ4oYySey4PJJdMHox5GHlA1K5PCMUTZbvk0sp/szv2mXMO5qyXPd83a/3//73W/ta3Th05lsTRLGANMBMYAZjfW6ATOAWccT58Lo5M4qgeWA40A1OBwcB34ClwG2hzPrQXx9UVgQwDjgJzivw+Av0y6ydAi/OhMxNrpMeA0d3Emd20F3Q+PE83ChmQCUCXBLwDdgITgXrngwMagLUSYETtSRwtVqw927X/RH4NiqsXzk7hGn6X+H5nIomjIcB9YChwA1jpfHhTolR9gX3ABsBKsg3YI7JDwBbnw6cSscZzApgLvAQmGU8qwuq8ArgDzM6rdw7gQQlJ7ZDzYWMFcSb2FjAdOO18aK5L4qgReAR8sXQ6H0I5oExG7trbKIvTSmUgJzZS2foAYwv6ks1OVCrATIQLgHX2rFSAYoPKYtbcG5inxblKQTJgr4Ej1cZl+FqM3zIxSpudZYL+t6V8owpqKKgZ1dJSvsGFDGlxU+lp+8VnIl7o75E1FpHyvShkarOgxiJSvk4TcV6L1iSOetWCXTytWp4v6Ki8Ahp1ZGphLeIz3nMFtejtIt6rbtaTWTD8vVpuN/70dNgVfA0YBJxM4qh/Dwkw3JPiuSbe3/OEbji7ym2muAIsreQiq0KAXVwXgIWAzRKT05v6V5/QRpOaiDkeV+D/EnBcuIbflB0V/hjvNCFZqgYqI8ucDx/+QYCV4KwE2FAzPzuR5YpQ4GTgqlq6zRhLSg05ZQRYiS9qdkgz0FXslytCAOOUieGAXb0LnQ+PqxAwRvF2Gp4p/mGebyFvk5/fiAVMA+4JqENTeCUCzK9Dcfc08OQK6FaEhFgzmQFc0rG6nsTRqjIC7P/X5W9xM4RT0kqWowi4lxrMZm3tBnY4H75nfAxrV6bx7Qe2Oh++lsOvSESGyAbZA8rgGWC18yFJ4shG+zb98PkGbHI+HK
-                    wUtyoREtIkAQN0A68HDgNTgPcmxPlwtRrMqkVIyHjgsk5OanYCFjkfHlSL1+2HWcpEZG9uH6DV3J5T/kYAwA8S0BtlGQveQwAAAABJRU5ErkJggg=="/>
-                            </svg>
-                        </div>
-                    </a>
-                    <div class="swiper-container product-images-slider">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide"><img src="./img/product/product-img4.png" alt=""></div>
-                            <div class="swiper-slide"><img src="./img/product/product-img4.png" alt=""></div>
-                            <div class="swiper-slide"><img src="./img/product/product-img4.png" alt=""></div>
-                        </div>
-                        <div class="swiper-button-prev"></div>
-                        <div class="swiper-button-next"></div>
-                        <div class="swiper-pagination"></div>
+                    <div class="product swiper-slide">
+                        <?php template('product-2'); ?>
                     </div>
-                    <h3>Капли шоколадные(глазурь)</h3>
-                    <div class="input-group">
-                        <input type="button" value="+">
-                        <input class="text" type="text" step="1" name="quantity" value="1">
-                        <input type="button" value="-">
-                        <div class="price"> 340 p.</div>
+                    <div class="product swiper-slide">
+                        <?php template('product-2'); ?>
                     </div>
-                    <button class="btn">В корзину</button>
-                    <button class="one-click">Купить в один клик</button>
+                    <div class="product swiper-slide">
+                        <?php template('product-2'); ?>
+                    </div>
+                    <div class="product swiper-slide">
+                        <?php template('product-2'); ?>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="swiper-button-right">
-        <img src="" alt="">
-    </div>
-    <div class="swiper-button-left">
     </div>
 </div>
 <div class="footer">
@@ -598,45 +503,44 @@
         <div class="footer-container">
             <div class="contacts">
                 <img class="logo" src="/img/Logo.png" alt="">
-                <a href="" class="item "><?xml version="1.0" encoding="utf-8"?>
-                    <!-- Generator: Adobe Illustrator 18.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                <a href="" class="item ">
                     <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                          xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="25px" height="25px"
                          viewBox="-41 164.9 512 512" enable-background="new -41 164.9 512 512" xml:space="preserve">
 <g>
-	<g>
-		<path fill="#FFFFFF" d="M215,676.9c-68.4,0-132.7-26.6-181-75c-48.4-48.4-75-112.6-75-181s26.6-132.7,75-181
+    <g>
+        <path fill="#FFFFFF" d="M215,676.9c-68.4,0-132.7-26.6-181-75c-48.4-48.4-75-112.6-75-181s26.6-132.7,75-181
 			c48.4-48.4,112.6-75,181-75s132.7,26.6,181,75c48.4,48.4,75,112.6,75,181s-26.6,132.7-75,181C347.7,650.3,283.4,676.9,215,676.9
 			L215,676.9z M215,194.9c-60.4,0-117.1,23.5-159.8,66.2S-11,360.5-11,420.9S12.5,538,55.2,580.7c42.7,42.7,99.4,66.2,159.8,66.2
 			s117.1-23.5,159.8-66.2C417.5,538,441,481.3,441,420.9s-23.5-117.1-66.2-159.8S275.4,194.9,215,194.9z"/>
-	</g>
+    </g>
     <g>
-		<path fill="#FFFFFF" d="M200,224.9h30v40h-30V224.9z"/>
-	</g>
+        <path fill="#FFFFFF" d="M200,224.9h30v40h-30V224.9z"/>
+    </g>
     <g>
-		<path fill="#FFFFFF" d="M314.6,300l28.3-28.3l21.2,21.2l-28.3,28.3L314.6,300z"/>
-	</g>
+        <path fill="#FFFFFF" d="M314.6,300l28.3-28.3l21.2,21.2l-28.3,28.3L314.6,300z"/>
+    </g>
     <g>
-		<path fill="#FFFFFF" d="M370.9,405.9h40v30h-40V405.9z"/>
-	</g>
+        <path fill="#FFFFFF" d="M370.9,405.9h40v30h-40V405.9z"/>
+    </g>
     <g>
-		<path fill="#FFFFFF" d="M314.6,541.8l21.2-21.2l28.3,28.3l-21.2,21.2L314.6,541.8z"/>
-	</g>
+        <path fill="#FFFFFF" d="M314.6,541.8l21.2-21.2l28.3,28.3l-21.2,21.2L314.6,541.8z"/>
+    </g>
     <g>
-		<path fill="#FFFFFF" d="M200,576.8h30v40h-30V576.8z"/>
-	</g>
+        <path fill="#FFFFFF" d="M200,576.8h30v40h-30V576.8z"/>
+    </g>
     <g>
-		<path fill="#FFFFFF" d="M65.8,548.8l28.3-28.3l21.2,21.2L87,570L65.8,548.8z"/>
-	</g>
+        <path fill="#FFFFFF" d="M65.8,548.8l28.3-28.3l21.2,21.2L87,570L65.8,548.8z"/>
+    </g>
     <g>
-		<path fill="#FFFFFF" d="M19,405.9h40v30H19V405.9z"/>
-	</g>
+        <path fill="#FFFFFF" d="M19,405.9h40v30H19V405.9z"/>
+    </g>
     <g>
-		<path fill="#FFFFFF" d="M65.8,292.9L87,271.7l28.3,28.3l-21.2,21.2L65.8,292.9z"/>
-	</g>
+        <path fill="#FFFFFF" d="M65.8,292.9L87,271.7l28.3,28.3l-21.2,21.2L65.8,292.9z"/>
+    </g>
     <g>
-		<path fill="#FFFFFF" d="M320.9,435.9H200V315h30v90.9h90.9V435.9z"/>
-	</g>
+        <path fill="#FFFFFF" d="M320.9,435.9H200V315h30v90.9h90.9V435.9z"/>
+    </g>
 </g>
 </svg>
                     Режим работы с 9 до 21 ежедневно</a>
@@ -646,7 +550,7 @@
                          height="20" x="0px" y="0px"
                          viewBox="-84 207.9 426 426" enable-background="new -84 207.9 426 426" xml:space="preserve">
 <g>
-	<path fill="#FFFFFF" d="M129.3,643.9c-4.7,0-9.1-2.2-11.9-6c-0.3-0.4-33.4-45.1-65.7-102.7c-44.1-78.8-66.5-144-66.5-194
+    <path fill="#FFFFFF" d="M129.3,643.9c-4.7,0-9.1-2.2-11.9-6c-0.3-0.4-33.4-45.1-65.7-102.7c-44.1-78.8-66.5-144-66.5-194
 		c0-79,64.3-143.4,143.4-143.4h0.6c79.1,0,143.4,64.3,143.4,143.4c0,41.5-22.2,104.2-66,186.2c-31.7,59.3-63.7,107.8-65,109.8
 		c-2.7,4-7.1,6.5-11.9,6.6C129.6,643.9,129.5,643.9,129.3,643.9z M129.3,623.9v10V623.9C129.3,623.9,129.3,623.9,129.3,623.9
 		L129.3,623.9z M128.7,217.9c-68,0-123.4,55.3-123.4,123.4c0,46.5,21.5,108.4,64,184.2c24.9,44.4,50,80.6,59.9,94.4
@@ -742,21 +646,12 @@
 <script>
     new Swiper('.buy-more', {
         navigation: {
-            nextEl: '.swiper-button-right',
-            prevEl: '.swiper-button-left'
-        },
-        pagination: {
-            el: '.color-product'
+            nextEl: '#bm-next',
+            prevEl: '#bm-prev'
         },
         slidesPerView: 4,
         loop: true,
-        spaceBetween: 20,
-        breakpoints: {
-            960: {
-                slidesPerView: 2,
-                spaceBetween: 8
-            }
-        }
+        spaceBetween: 20
     });
 
     productImagesSlider();
